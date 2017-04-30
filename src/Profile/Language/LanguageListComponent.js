@@ -20,12 +20,18 @@ export class LanguageListComponent extends Component {
 
     componentDidMount() {
         const context = this.setContext();
-        this.drawArcs(context);
-        this.drawLabels(context);
-
+        setTimeout(() => {
+            this.drawArcs(context);
+            this.drawLabels(context);
+        }, 500);
     }
 
     drawArcs (context) {
+        const colors = {
+            great: '#43A047',
+            bad: '#ef5350',
+            average: '#F57F17'
+        };
         const arc = d3.arc()
             .innerRadius((d, i) => this.arcBegins + i * this.arcRadius + 2)
             .outerRadius((d, i) => this.arcBegins + (i + 1) * this.arcRadius)
@@ -38,13 +44,27 @@ export class LanguageListComponent extends Component {
             .enter()
             .append('path')
             .attr('id', (d) => 'language-arc-' + d.name)
-            .attr('fill', () => schemeCategory10[Math.floor(
-                Math.random() * 1000 % schemeCategory10.length)])
+            .attr('class', 'language-arc')
+            .attr('fill', (d) => d.rating < 3 ? colors.bad : d.rating < 7 ? colors.average : colors.great)
+            .exit();
+
+
+        context
+            .selectAll('.language-arc')
+            .on('mouseover', function() {
+                d3.selectAll('.language-arc').style('opacity', 0.4);
+                d3.select(this).style('opacity', 1);
+            })
+            .on('mouseout', function() {
+                d3.selectAll('.language-arc').style('opacity', 1);
+            })
             .transition()
-            .delay(300)
-            .duration(3000)
+            .ease(d3.easeLinear)
+            .delay((d, i) => i * 200)
+            .duration(5000)
             .attr('d', arc)
             .attrTween('d', this.arcTween(arc));
+
     }
 
     drawLabels(context) {
@@ -82,10 +102,10 @@ export class LanguageListComponent extends Component {
         return function(d, i) {
             let self = this;
             const interpolate = d3.interpolateNumber(0, d.rating);
+            const data = { rating: 0 };
+
             return function(t) {
-                const data = {
-                    rating: interpolate(t)
-                };
+                data.rating = interpolate(t);
                 return arc.call(self, data, i);
             };
         };

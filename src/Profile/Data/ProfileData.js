@@ -26,23 +26,40 @@ export const ProfileData = {
     ],
     languageList: [
         {
-            name: 'Javascript',
-            rating: 8
-        }, {
-            name: 'HTML',
-            rating: 8
-        }, {
-            name: 'CSS',
-            rating: 7
-        }, {
-            name: 'Java',
-            rating: 6
-        }, {
-            name: 'Sass',
-            rating: 6
-        }, {
-            name: 'PHP',
-            rating: 6
+            "name": "Python",
+            "rating": 3
+        },
+        {
+            "name": "PHP",
+            "rating": 6
+        },
+        {
+            "name": "Sass",
+            "rating": 6
+        },
+        {
+            "name": "Typescript",
+            "rating": 7
+        },
+        {
+            "name": "Swift",
+            "rating": 4
+        },
+        {
+            "name": "Java",
+            "rating": 6
+        },
+        {
+            "name": "CSS",
+            "rating": 7
+        },
+        {
+            "name": "HTML",
+            "rating": 8
+        },
+        {
+            "name": "Javascript",
+            "rating": 8
         }
     ],
     frameworkList: [
