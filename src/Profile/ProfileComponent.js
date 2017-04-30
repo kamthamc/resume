@@ -74,7 +74,7 @@ export class ProfileComponent extends Component {
                                 <ul>{this.props.profile.summary.map((summary, index) => <li key={index}>{summary}</li>)}</ul>
                             </div>
                         </div>
-                        <img className="profile-pic" src="Assets/ProfilePic.png" alt="profile picture" />
+                        <img className="profile" src="Assets/ProfilePic.png" alt="profile picture" />
                     </div>
                     <LanguageListComponent languageList={this.props.profile.languageList}/>
                     <FrameworkListComponent frameworkList={this.props.profile.frameworkList}/>
