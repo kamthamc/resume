@@ -1,4 +1,4 @@
-language: javascript
+language: node_js
 
 cache:
     yarn: true
@@ -11,3 +11,8 @@ install:
 
 script:
     yarn run deploy
+
+branches:
+    only:
+        - master
+        - stable
