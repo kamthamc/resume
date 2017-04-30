@@ -6,7 +6,12 @@
  * */
 
 export const ProfileData = {
-    summary: 'Alpha',
+    summary: [
+        'Diversified skill set covering application and framework development. ',
+        'Hands-on Involvement in both Front-end and Back-end development. ',
+        'Diverse experience and deep knowledge of multiple programming languages. ',
+        'Quick learner and can easily adopt new languages and technologies.'
+    ],
     projectList: [],
     educationList: [
         {

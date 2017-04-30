@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500|Rubik|Work+Sans');
 
+@import "~font-awesome/css/font-awesome.css";
+
 body {
     margin: 0;
     padding: 0;
@@ -7,7 +9,7 @@ body {
     display: flex;
 }
 
-#resume {
+#root {
     display: flex;
     flex-direction: column;
     flex: 1;
