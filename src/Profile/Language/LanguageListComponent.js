@@ -7,7 +7,6 @@
 
 import React, {Component} from 'react';
 import * as d3 from 'd3';
-import {schemeCategory10} from 'd3';
 
 import './LanguageListComponent.css';
 
@@ -48,15 +47,26 @@ export class LanguageListComponent extends Component {
             .attr('fill', (d) => d.rating < 3 ? colors.bad : d.rating < 7 ? colors.average : colors.great)
             .exit();
 
+        const arcs = context
+            .selectAll('.language-arc');
 
-        context
-            .selectAll('.language-arc')
+        arcs
             .on('mouseover', function() {
-                d3.selectAll('.language-arc').style('opacity', 0.4);
-                d3.select(this).style('opacity', 1);
+                arcs
+                    .transition()
+                    .duration(200)
+                    .style('opacity', 0.4);
+                d3
+                    .select(this)
+                    .transition()
+                    .duration(200)
+                    .style('opacity', 1);
             })
             .on('mouseout', function() {
-                d3.selectAll('.language-arc').style('opacity', 1);
+                arcs
+                    .transition()
+                    .duration(200)
+                    .style('opacity', 1);
             })
             .transition()
             .ease(d3.easeLinear)
@@ -78,6 +88,7 @@ export class LanguageListComponent extends Component {
             .attr("dy", 18)
             .attr('fill', '#FFF')
             .append('textPath')
+            .transition()
             .attr('xlink:href', (d) => '#language-arc-' + d.name)
             .attr('transform', `translate(10, -5)`)
             .text(function(d) {
