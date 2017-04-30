@@ -68,7 +68,7 @@ export class ProfileComponent extends Component {
                                     <i className="fa fa-2x fa-twitter-square"
                                        aria-hidden="true"/>
                                 </a>
-                                
+
                             </div>
                             <div className="summary">
                                 <ul>{this.props.profile.summary.map((summary, index) => <li key={index}>{summary}</li>)}</ul>
