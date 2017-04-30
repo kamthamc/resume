@@ -40,6 +40,7 @@ export class ProfileComponent extends Component {
                                 <i className="material-icons">phone</i> (516) 637 - 6456
                             </div>
                             <div>
+                                <h5>Social Profiles</h5>
                                 <a
                                     href="https://www.linkedin.com/in/kamthamc/"
                                     className="linkedin"
