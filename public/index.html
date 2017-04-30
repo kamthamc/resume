@@ -3,6 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="__OG_TITLE__">
+        <meta property="og:description" content="__OG_DESCRIPTION__">
         <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
         <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
         <!--
@@ -31,7 +33,7 @@
         <script>
             if ('serviceWorker' in navigator) {
                 window.addEventListener('load', function () {
-                    navigator.serviceWorker.register('/service-worker.js');
+                    navigator.serviceWorker.register('./service-worker.js');
                 });
             }
         </script>

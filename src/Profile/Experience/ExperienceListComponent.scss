@@ -1,0 +1,12 @@
+ul.experience-list  {
+    li {
+        border-bottom: none;
+        border-top: none;
+        &:last-child {
+            //border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+        }
+        &:first-child {
+            //border-top: 1px solid rgba(0, 0, 0, 0.125);
+        }
+    }
+}

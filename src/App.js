@@ -1,21 +1,22 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.scss';
+import React, {Component} from 'react';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import darkBaseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
+
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
+
+import {ProfileComponent} from './Profile/ProfileComponent';
+import {ProfileData} from './Profile/Data/ProfileData';
+
+import './App.css';
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
+    render() {
+        return (
+            <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
+                <ProfileComponent profile={ProfileData}/>
+            </MuiThemeProvider>
+        );
+    }
 }
 
 export default App;
