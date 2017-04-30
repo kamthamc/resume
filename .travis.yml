@@ -13,6 +13,7 @@ install:
 
 
 script:
+    ./travis.config.sh
     yarn run deploy
 
 branches:
