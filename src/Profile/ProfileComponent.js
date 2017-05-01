@@ -16,18 +16,12 @@ import {LanguageListComponent} from './Language/LanguageListComponent';
 import './ProfileComponent.css';
 import {FrameworkListComponent} from './Framework/FrameworkListComponent';
 
-const style = {
-    margin: '10px auto',
-    padding: '10px',
-    width: '80%',
-    display: 'flex'
-};
 
 export class ProfileComponent extends Component {
 
     render() {
         return (
-            <Paper style={style}>
+            <Paper >
                 <div className="profile">
                     <div className="info">
                         <div className="details">

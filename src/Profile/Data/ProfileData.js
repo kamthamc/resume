@@ -36,7 +36,7 @@ export const ProfileData = {
     languageList: [
         {
             "name": "Python",
-            "rating": 3
+            "rating": 5
         },
         {
             "name": "PHP",

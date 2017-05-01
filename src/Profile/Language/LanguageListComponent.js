@@ -78,14 +78,19 @@ export class LanguageListComponent extends Component {
     }
 
     drawLabels(context) {
+        const x = 8;
+        let dY = 18;
+        if (document.body.clientWidth < 900) {
+            dY = 12;
+        }
         const text = context
             .selectAll('.language-label')
             .data(this.props.languageList);
         text.enter()
             .append("text")
             .attr('class', 'language-label')
-            .attr("x", 8)
-            .attr("dy", 18)
+            .attr("x", x)
+            .attr("dy", dY)
             .attr('fill', '#FFF')
             .append('textPath')
             .transition()
@@ -97,6 +102,10 @@ export class LanguageListComponent extends Component {
     }
 
     setContext() {
+        if(document.body.clientWidth < 900) {
+            this.arcBegins = 5;
+            this.arcRadius = 18;
+        }
         const dimension = 2 * (this.arcBegins +
             (this.props.languageList.length + 1) * this.arcRadius) + 20;
         return d3.select(this.refs.arc)
