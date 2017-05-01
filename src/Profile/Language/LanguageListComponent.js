@@ -71,7 +71,7 @@ export class LanguageListComponent extends Component {
             .transition()
             .ease(d3.easeLinear)
             .delay((d, i) => i * 200)
-            .duration(5000)
+            .duration(3000)
             .attr('d', arc)
             .attrTween('d', this.arcTween(arc));
 
@@ -93,8 +93,7 @@ export class LanguageListComponent extends Component {
             .attr('transform', `translate(10, -5)`)
             .text(function(d) {
                 return d.name;
-            })
-            .exit();
+            });
     }
 
     setContext() {
