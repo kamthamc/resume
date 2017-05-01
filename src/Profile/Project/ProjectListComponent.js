@@ -12,13 +12,14 @@ export class ProjectListComponent extends Component {
 
     render() {
         return (
-            <ul className="project-list">
+            <div className="project-list">
+                <h4>Projects</h4>
                 {
                     this.props.projectList.map((project, index) => {
                         return <ProjectComponent project={project} key={index}/>;
                     })
                 }
-            </ul>
+            </div>
         );
     }
 }

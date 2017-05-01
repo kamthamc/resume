@@ -23,7 +23,7 @@ export class FrameworkListComponent extends Component {
     render() {
         return (
             <div className="framework-list">
-                <h4>Frameworks</h4>
+                <h4>Frameworks/Tools</h4>
                 <div style={styles.wrapper}>
                 {
                     this.props.frameworkList.map((framework, index) => <Chip

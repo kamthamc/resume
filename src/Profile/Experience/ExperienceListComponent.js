@@ -16,6 +16,7 @@ export class ExperienceListComponent extends Component {
     render() {
         return (
             <div className="experience-list">
+                <h4>Experience</h4>
                 {
                     this.props.experienceList.map(( skill, index ) => {
                         return (

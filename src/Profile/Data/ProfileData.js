@@ -15,13 +15,22 @@ export const ProfileData = {
     projectList: [],
     educationList: [
         {
-            begin: 1493426735,
-            end: 1493426735,
-            university: 'Indiana University - Purdue University, Indianapolis',
-            universityUrl: 'http://iupui.com',
+            begin: 1326326400,
+            end: 1386806400,
+            university: 'Indiana University - Purdue University',
+            universityUrl: 'http://iupui.edu',
             gpa: 3.0,
             location: 'Indianapolis, Indiana',
-            degree: 'Computer & Information Science'
+            summary: 'Masters in Computer & Information Science'
+        },
+        {
+            begin: 1159220000,
+            end: 1273449600,
+            university: 'Jawaharlal Nehru Technological University',
+            universityUrl: 'http://www.jntuh.ac.in/',
+            gpa: 3.0,
+            location: 'Hyderabad, India',
+            summary: 'Bachelors in Computer Science'
         }
     ],
     languageList: [
@@ -68,11 +77,21 @@ export const ProfileData = {
         }, {
             name: 'Angular 2'
         }, {
+            name: 'NodeJS'
+        }, {
+            name: 'Webpack'
+        }, {
             name: 'Bootstrap'
         }, {
             name: 'Laravel'
         }, {
             name: 'Spring'
+        }, {
+            name: 'DynamoDB'
+        }, {
+            name: 'Elastic Search'
+        }, {
+            name: 'Redis'
         }
     ],
     skillList: [
@@ -82,8 +101,7 @@ export const ProfileData = {
     ],
     experienceList: [
         {
-            begin: 1493426735,
-            end: 1493426735,
+            begin: 1489795200,
             company: 'Pearson',
             companyUrl: 'http://pearson.com',
             role: 'Software Developer',
@@ -91,8 +109,7 @@ export const ProfileData = {
             noteList: [],
         },
         {
-            begin: 1493426735,
-            end: 1493426735,
+            begin: 1486684800,
             company: 'Presentience',
             companyUrl: 'http://presentience.in',
             role: 'Software Consultant',
@@ -100,8 +117,8 @@ export const ProfileData = {
             noteList: [],
         },
         {
-            begin: 1493426735,
-            end: 1493426735,
+            begin: 1476057600,
+            end: 1487462400,
             company: 'Connect',
             companyUrl: 'http://connect.com',
             role: 'Web Developer',
@@ -117,8 +134,8 @@ export const ProfileData = {
             ],
         },
         {
-            begin: 1493426735,
-            end: 1493426735,
+            begin: 1412899200,
+            end: 1476057600,
             company: 'Captora',
             companyUrl: 'https://captora.com',
             role: 'Software Engineer',
@@ -132,10 +149,10 @@ export const ProfileData = {
             ],
         },
         {
-            begin: 1493426735,
-            end: 1493426735,
+            begin: 1404259200,
+            end: 1410307200,
             company: 'Apple',
-            companyUrl: '',
+            companyUrl: 'https://apple.com',
             location: 'Sunnyvale, CA',
             role: 'Front End Developer',
             noteList: [
@@ -150,7 +167,7 @@ export const ProfileData = {
             begin: 1493426735,
             end: 1493426735,
             company: 'Indiana University',
-            companyUrl: '',
+            companyUrl: 'https://iupui.edu',
             role: 'Research Assistant and Web Developer',
             location: 'Indianapolis, IN',
             noteList: [
@@ -165,7 +182,7 @@ export const ProfileData = {
             begin: 1493426735,
             end: 1493426735,
             company: 'Indiana University School of Medicine:',
-            companyUrl: '',
+            companyUrl: 'https://iupui.edu',
             role: 'Research Assistant and Web Developer',
             location: 'Indianapolis, IN',
             noteList: [
@@ -180,7 +197,7 @@ export const ProfileData = {
             begin: 1493426735,
             end: 1493426735,
             company: 'Electronic Arts',
-            companyUrl: '',
+            companyUrl: 'https://www.ea.com/',
             role: 'Associate software engineer',
             location: 'Hyderabad, India',
             noteList: [

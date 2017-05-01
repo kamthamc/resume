@@ -20,7 +20,6 @@ const style = {
     margin: '10px auto',
     padding: '10px',
     width: '80%',
-    height: '100%',
     display: 'flex'
 };
 
@@ -71,17 +70,18 @@ export class ProfileComponent extends Component {
                                 </a>
 
                             </div>
+                            <h4>Summary</h4>
                             <div className="summary">
                                 <ul>{this.props.profile.summary.map((summary, index) => <li key={index}>{summary}</li>)}</ul>
                             </div>
                         </div>
-                        <img className="profile-pic" src="Assets/ProfilePic.png" alt="profile" />
+                        {/*<img className="profile-pic" src="Assets/ProfilePic.png" alt="profile" />*/}
                     </div>
                     <LanguageListComponent languageList={this.props.profile.languageList}/>
                     <FrameworkListComponent frameworkList={this.props.profile.frameworkList}/>
                     <EducationListComponent educationList={this.props.profile.educationList}/>
                     <ExperienceListComponent experienceList={this.props.profile.experienceList}/>
-                    <ProjectListComponent projectList={this.props.profile.projectList}/>
+                    {/*<ProjectListComponent projectList={this.props.profile.projectList}/>*/}
                 </div>
             </Paper>
         );
