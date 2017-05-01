@@ -128,7 +128,7 @@ export class LanguageListComponent extends Component {
     render() {
         return (
             <div className="language-list">
-                <h3>Language Skills</h3>
+                <h3>Skill Set</h3>
                 <div ref="arc" className="language-list"/>
             </div>
         );
