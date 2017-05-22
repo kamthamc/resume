@@ -7,12 +7,30 @@ body {
     padding: 0;
     font-family: 'Roboto', sans-serif;
     display: flex;
+    flex-direction: column;
+    //min-width: 700px;
 }
 
 #root {
     display: flex;
     flex-direction: column;
     flex: 1;
+    > div {
+        @media only screen and (max-width: 600px) {
+            width: 100%;
+            margin: 0px;
+        }
+
+        @media only screen and (min-width: 600px) and (max-width: 1000px) {
+            width: 90%;
+        }
+
+        width: 80%;
+        margin: 10px auto;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @font-face {

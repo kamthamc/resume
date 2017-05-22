@@ -12,13 +12,14 @@ export class EducationListComponent extends Component {
 
     render() {
         return (
-            <ul className="education-list">
+            <div className="education-list">
+                <h4>Education</h4>
                 {
                     this.props.educationList.map((education, index) => {
                         return <EducationComponent education={education} key={index}/>;
                     })
                 }
-            </ul>
+            </div>
         );
     }
 }

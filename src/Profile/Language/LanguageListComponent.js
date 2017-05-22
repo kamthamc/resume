@@ -71,21 +71,26 @@ export class LanguageListComponent extends Component {
             .transition()
             .ease(d3.easeLinear)
             .delay((d, i) => i * 200)
-            .duration(5000)
+            .duration(3000)
             .attr('d', arc)
             .attrTween('d', this.arcTween(arc));
 
     }
 
     drawLabels(context) {
+        const x = 8;
+        let dY = 18;
+        if (document.body.clientWidth < 900) {
+            dY = 12;
+        }
         const text = context
             .selectAll('.language-label')
             .data(this.props.languageList);
         text.enter()
             .append("text")
             .attr('class', 'language-label')
-            .attr("x", 8)
-            .attr("dy", 18)
+            .attr("x", x)
+            .attr("dy", dY)
             .attr('fill', '#FFF')
             .append('textPath')
             .transition()
@@ -93,11 +98,14 @@ export class LanguageListComponent extends Component {
             .attr('transform', `translate(10, -5)`)
             .text(function(d) {
                 return d.name;
-            })
-            .exit();
+            });
     }
 
     setContext() {
+        if(document.body.clientWidth < 900) {
+            this.arcBegins = 5;
+            this.arcRadius = 18;
+        }
         const dimension = 2 * (this.arcBegins +
             (this.props.languageList.length + 1) * this.arcRadius) + 20;
         return d3.select(this.refs.arc)
@@ -129,7 +137,7 @@ export class LanguageListComponent extends Component {
     render() {
         return (
             <div className="language-list">
-                <h3>Language Skills</h3>
+                <h3>Skill Set</h3>
                 <div ref="arc" className="language-list"/>
             </div>
         );

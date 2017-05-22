@@ -1,0 +1,20 @@
+.experience {
+    display: flex;
+    flex-direction: column;
+    .info {
+        display: flex;
+        flex-direction: row;
+        div {
+            flex-grow: 1;
+
+            &:nth-child(2) {
+                flex-grow: 0;
+                margin: auto;
+            }
+
+            p {
+                margin: 5px 0;
+            }
+        }
+    }
+}
