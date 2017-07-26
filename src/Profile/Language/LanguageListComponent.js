@@ -93,8 +93,7 @@ export class LanguageListComponent extends Component {
             .attr('transform', `translate(10, -5)`)
             .text(function(d) {
                 return d.name;
-            })
-            .exit();
+            });
     }
 
     setContext() {

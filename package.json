@@ -4,21 +4,21 @@
   "private": true,
   "homepage": "https://kamthamc.github.io/resume",
   "dependencies": {
-    "d3": "^4.8.0",
+    "d3": "^4.10.0",
     "font-awesome": "^4.7.0",
     "material-design-icons": "^3.0.1",
-    "material-ui": "^0.17.4",
+    "material-ui": "^0.18.7",
     "momentjs": "^2.0.0",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
     "react-tap-event-plugin": "^2.0.1"
   },
   "devDependencies": {
-    "gh-pages": "^0.12.0",
-    "node-sass": "^4.5.2",
+    "gh-pages": "^1.0.0",
+    "node-sass": "^4.5.3",
     "npm-run-all": "^4.0.2",
-    "react-scripts": "0.9.5",
-    "sw-precache": "^5.1.0"
+    "react-scripts": "^1.0.10",
+    "sw-precache": "^5.2.0"
   },
   "scripts": {
     "start-js": "react-scripts start",

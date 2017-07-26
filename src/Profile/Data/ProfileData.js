@@ -26,10 +26,6 @@ export const ProfileData = {
     ],
     languageList: [
         {
-            "name": "Python",
-            "rating": 3
-        },
-        {
             "name": "PHP",
             "rating": 6
         },
@@ -48,10 +44,6 @@ export const ProfileData = {
         {
             "name": "Java",
             "rating": 6
-        },
-        {
-            "name": "CSS",
-            "rating": 7
         },
         {
             "name": "HTML",
@@ -81,6 +73,15 @@ export const ProfileData = {
         }
     ],
     experienceList: [
+        {
+            begin: 1493426735,
+            end: 1493426735,
+            company: 'ShiftLeft',
+            companyUrl: 'https://shiftleft.io',
+            role: 'Sr UI Engineer',
+            location: 'CA',
+            noteList: [],
+        },
         {
             begin: 1493426735,
             end: 1493426735,
