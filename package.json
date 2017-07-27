@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://kamthamc.github.io/resume",
   "dependencies": {
+    "animate.css": "^3.5.2",
     "d3": "^4.8.0",
     "font-awesome": "^4.7.0",
     "material-design-icons": "^3.0.1",
@@ -14,6 +15,7 @@
     "react-tap-event-plugin": "^2.0.1"
   },
   "devDependencies": {
+    "@types/node": "^7.0.18",
     "autoprefixer": "^6.7.7",
     "babel-core": "^6.24.1",
     "babel-eslint": "^7.2.3",
@@ -49,7 +51,7 @@
     "postcss-loader": "^1.3.3",
     "promise": "7.1.1",
     "react-dev-utils": "^0.5.2",
-    "style-loader": "^0.16.1",
+    "style-loader": "^0.17.0",
     "sw-precache": "^5.1.0",
     "url-loader": "^0.5.8",
     "webpack": "^2.4.1",

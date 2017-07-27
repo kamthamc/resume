@@ -35,8 +35,8 @@ export const ProfileData = {
     ],
     languageList: [
         {
-            "name": "Python",
-            "rating": 5
+            "name": "SQL",
+            "rating": 7
         },
         {
             "name": "PHP",
@@ -68,7 +68,7 @@ export const ProfileData = {
         },
         {
             "name": "Javascript",
-            "rating": 8
+            "rating": 9
         }
     ],
     frameworkList: [
@@ -87,16 +87,15 @@ export const ProfileData = {
         }, {
             name: 'Spring'
         }, {
-            name: 'DynamoDB'
+            name: 'AWS'
         }, {
             name: 'Elastic Search'
         }, {
             name: 'Redis'
-        }
-    ],
-    skillList: [
-        {
-            name: 'java'
+        }, {
+            name: 'Docker'
+        }, {
+            name: 'DynamoDB'
         }
     ],
     experienceList: [
