@@ -35,12 +35,39 @@
           To begin the development, run `npm start`.
           To create a production bundle, use `npm run build`.
         -->
+
+        <script type="application/ld+json">
+            //Google Structured Data
+            {
+                "@context": "http://schema.org",
+                "@type": "Person",
+                "name": "Chaitanya Kumar kamatham",
+                "url": "kamthamc.github.io/resume/",
+                "sameAs": [
+                    "https://www.linkedin.com/in/kamthamc/",
+                    "https://github.com/kamthamc",
+                    "https://twitter.com/gangaraju4u"
+                ]
+            }
+        </script>
+
         <script>
+            //Service Worker
             if ('serviceWorker' in navigator) {
                 window.addEventListener('load', function () {
                     navigator.serviceWorker.register('./service-worker.js');
                 });
             }
+
+            //Google Analytics
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-22039648-4', 'auto');
+            ga('send', 'pageview');
+
         </script>
     </body>
 </html>
