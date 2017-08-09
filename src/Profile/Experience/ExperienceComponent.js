@@ -11,9 +11,9 @@ export class ExperienceComponent extends Component {
 
     render() {
         return (
-            <div className="experience">
+            <li className="experience">
                 {this.props.experience.company}
-            </div>
+            </li>
         );
     }
 }

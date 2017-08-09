@@ -58,7 +58,7 @@ export const ProfileData = {
         {
             name: 'React'
         }, {
-            name: 'Angular 2'
+            name: 'Angular 4'
         }, {
             name: 'Bootstrap'
         }, {
@@ -89,15 +89,6 @@ export const ProfileData = {
             companyUrl: 'http://pearson.com',
             role: 'Software Developer',
             location: 'Fremont, CA',
-            noteList: [],
-        },
-        {
-            begin: 1493426735,
-            end: 1493426735,
-            company: 'Presentience',
-            companyUrl: 'http://presentience.in',
-            role: 'Software Consultant',
-            location: 'Hyderabad, India',
             noteList: [],
         },
         {
