@@ -15,11 +15,11 @@ export const ProfileData = {
     projectList: [],
     educationList: [
         {
-            begin: 1493426735,
-            end: 1493426735,
+            begin: 1493426735000,
+            end: 1493426735000,
             university: 'Indiana University - Purdue University, Indianapolis',
-            universityUrl: 'http://iupui.com',
-            gpa: 3.0,
+            universityUrl: 'http://iupui.edu',
+            gpa: 3,
             location: 'Indianapolis, Indiana',
             degree: 'Computer & Information Science'
         }
@@ -74,8 +74,7 @@ export const ProfileData = {
     ],
     experienceList: [
         {
-            begin: 1493426735,
-            end: 1493426735,
+            begin: 1498892400000,
             company: 'ShiftLeft',
             companyUrl: 'https://shiftleft.io',
             role: 'Sr UI Engineer',
@@ -83,8 +82,8 @@ export const ProfileData = {
             noteList: [],
         },
         {
-            begin: 1493426735,
-            end: 1493426735,
+            begin: 1488355200000,
+            end: 1496300400000,
             company: 'Pearson',
             companyUrl: 'http://pearson.com',
             role: 'Software Developer',
@@ -92,8 +91,8 @@ export const ProfileData = {
             noteList: [],
         },
         {
-            begin: 1493426735,
-            end: 1493426735,
+            begin: 1475305200000,
+            end: 1485936000000,
             company: 'Connect',
             companyUrl: 'http://connect.com',
             role: 'Web Developer',
@@ -109,8 +108,8 @@ export const ProfileData = {
             ],
         },
         {
-            begin: 1493426735,
-            end: 1493426735,
+            begin: 1412146800000,
+            end: 1475305200000,
             company: 'Captora',
             companyUrl: 'https://captora.com',
             role: 'Software Engineer',
@@ -124,8 +123,8 @@ export const ProfileData = {
             ],
         },
         {
-            begin: 1493426735,
-            end: 1493426735,
+            begin: 1404198000000,
+            end: 1409554800000,
             company: 'Apple',
             companyUrl: '',
             location: 'Sunnyvale, CA',
@@ -139,8 +138,8 @@ export const ProfileData = {
             ],
         },
         {
-            begin: 1493426735,
-            end: 1493426735,
+            begin: 1367391600000,
+            end: 1385884800000,
             company: 'Indiana University',
             companyUrl: '',
             role: 'Research Assistant and Web Developer',
@@ -154,9 +153,9 @@ export const ProfileData = {
             ],
         },
         {
-            begin: 1493426735,
-            end: 1493426735,
-            company: 'Indiana University School of Medicine:',
+            begin: 1325404800000,
+            end: 1367391600000,
+            company: 'Indiana University School of Medicine',
             companyUrl: '',
             role: 'Research Assistant and Web Developer',
             location: 'Indianapolis, IN',
@@ -169,8 +168,8 @@ export const ProfileData = {
             ],
         },
         {
-            begin: 1493426735,
-            end: 1493426735,
+            begin: 1277967600000,
+            end: 1296547200000,
             company: 'Electronic Arts',
             companyUrl: '',
             role: 'Associate software engineer',

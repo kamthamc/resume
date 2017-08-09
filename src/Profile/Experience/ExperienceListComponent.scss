@@ -1,15 +1,20 @@
 .experience-list {
     list-style: none;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     margin: 5px 0;
 
     .experience {
-        padding: 8px 15px;
-        border-radius: 20px;
-        background-color: darkgrey;
-        margin: 5px;
+        flex: 1;
+        padding: 0;
+        p {
+            margin: 0;
+            span, address {
+                margin: 5px 2px;
+                display: inline-block;
+                padding: 2px;
+            }
+        }
     }
 }
 
