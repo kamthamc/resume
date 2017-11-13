@@ -11,7 +11,7 @@
     "momentjs": "^2.0.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-tap-event-plugin": "^2.0.1"
+    "react-tap-event-plugin": "^3.0.2"
   },
   "devDependencies": {
     "gh-pages": "^1.0.0",
