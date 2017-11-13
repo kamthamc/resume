@@ -20,3 +20,4 @@ branches:
     only:
         - master
         - stable
+        - /^greenkeeper/.*$/
