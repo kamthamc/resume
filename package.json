@@ -10,7 +10,7 @@
     "material-ui": "^0.19.4",
     "momentjs": "^2.0.0",
     "react": "^15.6.1",
-    "react-dom": "^15.6.1",
+    "react-dom": "^16.1.1",
     "react-tap-event-plugin": "^3.0.2"
   },
   "devDependencies": {
