@@ -5,6 +5,8 @@ You can find the most recent version of this guide [here](https://github.com/fac
 
 ## Table of Contents
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/kamthamc/resume.svg)](https://greenkeeper.io/)
+
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/8977ce646a0847829daa0be0c1bdfbd5)](https://www.codacy.com/app/kamthamc/resume?utm_source=github.com&utm_medium=referral&utm_content=kamthamc/resume&utm_campaign=badger)
 
 - [Updating to New Releases](#updating-to-new-releases)
