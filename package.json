@@ -7,10 +7,10 @@
     "d3": "^4.11.0",
     "font-awesome": "^4.7.0",
     "material-design-icons": "^3.0.1",
-    "moment": "^2.18.1",
     "material-ui": "^0.19.4",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
+    "moment": "^2.18.1",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
     "react-tap-event-plugin": "^3.0.2"
   },
   "devDependencies": {
