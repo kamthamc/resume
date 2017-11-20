@@ -13,11 +13,10 @@ install:
 
 
 script:
-    sh ./travis.config.sh
     yarn run deploy
 
 branches:
     only:
         - master
-        - stable
+        - develop
         - /^greenkeeper/.*$/
