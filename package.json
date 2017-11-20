@@ -17,7 +17,7 @@
     "gh-pages": "^1.0.0",
     "node-sass": "^4.6.1",
     "npm-run-all": "^4.0.2",
-    "react-scripts": "^1.0.10",
+    "react-scripts": "^1.0.17",
     "sw-precache": "^5.2.0"
   },
   "scripts": {
