@@ -28,6 +28,6 @@
     "eject": "react-scripts eject",
     "build-css": "node-sass ./src/ -o ./src/",
     "watch-css": "yarn run build-css && node-sass src/ -o src/ --watch --recursive",
-    "deploy": "yarn run build && gh-pages -d build"
+    "deploy": "gh-pages"
   }
 }
