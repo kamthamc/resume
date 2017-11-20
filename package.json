@@ -7,8 +7,8 @@
     "d3": "^4.11.0",
     "font-awesome": "^4.7.0",
     "material-design-icons": "^3.0.1",
+    "moment": "^2.18.1",
     "material-ui": "^0.19.4",
-    "momentjs": "^2.0.0",
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
     "react-tap-event-plugin": "^3.0.2"
@@ -24,7 +24,7 @@
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
     "build": "yarn run build-css && react-scripts build && sw-precache --config=sw-precache-config.js",
-    "test": "react-scripts test --env=jsdom",
+    "test": "yarn run build-css && react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "build-css": "node-sass ./src/ -o ./src/",
     "watch-css": "yarn run build-css && node-sass src/ -o src/ --watch --recursive",

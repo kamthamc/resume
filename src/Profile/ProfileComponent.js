@@ -9,26 +9,19 @@ import React, { Component } from 'react';
 import Paper from 'material-ui/Paper';
 
 import { EducationListComponent } from './Education/EducationListComponent';
-import { ProjectListComponent } from './Project/ProjectListComponent';
+// import { ProjectListComponent } from './Project/ProjectListComponent';
 import { ExperienceListComponent } from './Experience/ExperienceListComponent';
 import {LanguageListComponent} from './Language/LanguageListComponent';
 
 import './ProfileComponent.css';
 import {FrameworkListComponent} from './Framework/FrameworkListComponent';
 
-const style = {
-    margin: '10px auto',
-    padding: '10px',
-    width: '80%',
-    height: '100%',
-    display: 'flex'
-};
 
 export class ProfileComponent extends Component {
 
     render() {
         return (
-            <Paper style={style}>
+            <Paper className="profile-container">
                 <div className="profile">
                     <div className="info">
                         <div className="details">
@@ -81,7 +74,7 @@ export class ProfileComponent extends Component {
                     <FrameworkListComponent frameworkList={this.props.profile.frameworkList}/>
                     <EducationListComponent educationList={this.props.profile.educationList}/>
                     <ExperienceListComponent experienceList={this.props.profile.experienceList}/>
-                    <ProjectListComponent projectList={this.props.profile.projectList}/>
+                    {/*<ProjectListComponent projectList={this.props.profile.projectList}/>*/}
                 </div>
             </Paper>
         );

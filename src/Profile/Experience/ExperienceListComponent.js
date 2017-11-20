@@ -15,14 +15,17 @@ export class ExperienceListComponent extends Component {
 
     render() {
         return (
-            <div className="experience-list">
-                {
-                    this.props.experienceList.map(( skill, index ) => {
-                        return (
-                            <ExperienceComponent experience={skill} key={index}/>
-                        );
-                    })
-                }
+            <div className="experience-list-container">
+                <h4><i className="fa fa-list" /> Experience: </h4>
+                <ul className="experience-list">
+                    {
+                        this.props.experienceList.map(( skill, index ) => {
+                            return (
+                                <ExperienceComponent experience={skill} key={index}/>
+                            );
+                        })
+                    }
+                </ul>
             </div>
         );
     }

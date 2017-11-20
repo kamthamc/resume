@@ -26,6 +26,7 @@ export class LanguageListComponent extends Component {
     }
 
     drawArcs (context) {
+        let languages = this.props.languageList ? this.props.languageList.sort((a, b) => b.rating - a.rating).slice(0, 5): [];
         const colors = {
             great: '#43A047',
             bad: '#ef5350',
@@ -39,7 +40,7 @@ export class LanguageListComponent extends Component {
 
         context
             .selectAll('language')
-            .data(this.props.languageList)
+            .data(languages)
             .enter()
             .append('path')
             .attr('id', (d) => 'language-arc-' + d.name)
@@ -128,7 +129,7 @@ export class LanguageListComponent extends Component {
     render() {
         return (
             <div className="language-list">
-                <h3>Language Skills</h3>
+                <h4><i className="fa fa-list" /> Language Skills</h4>
                 <div ref="arc" className="language-list"/>
             </div>
         );
