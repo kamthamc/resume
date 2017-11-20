@@ -6,7 +6,7 @@
  * */
 
 import React, { Component } from 'react';
-import * as moment from 'moment';
+import moment from 'moment/moment';
 
 const formatDate = (dateNum) => {
     if(dateNum) {
