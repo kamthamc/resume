@@ -77,7 +77,7 @@ export const ProfileData = {
             begin: 1498892400000,
             company: 'ShiftLeft',
             companyUrl: 'https://shiftleft.io',
-            role: 'Sr UI Engineer',
+            role: 'UI Engineer',
             location: 'CA',
             noteList: [],
         },
