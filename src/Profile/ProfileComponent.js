@@ -22,20 +22,24 @@ export class ProfileComponent extends PureComponent {
     render() {
         const { title, subtitle, email, phone, social, profilePic } = this.props.profile;
         return (
-            <Paper className="profile-container">
+            <div className="ProfileContainer">
                 <div className="profile">
                     <div className="info">
+                        <div id="profile" className="right">
+                            <img className="profile-pic" src={profilePic} alt="profile" />
+                            <div className="slant" />
+                            <div className="btn-floating btn-large add-btn"><i className="material-icons">add</i></div>
+                        </div>
                         <div className="details">
                             <h4>{title}</h4>
                             <h6>{subtitle}</h6>
-                            <div>
+                            <p>
                                 <i className="material-icons">mail</i> {email}
-                            </div>
-                            <div>
+                            </p>
+                            <p>
                                 <i className="material-icons">phone</i> {phone}
-                            </div>
-                            <div>
-                                <h5>Social Profiles</h5>
+                            </p>
+                            <div className="social">
                                 {
                                     social.map(({ name, url, icon }) => (
                                         <a
@@ -46,24 +50,21 @@ export class ProfileComponent extends PureComponent {
                                             title={name}
                                             aria-label={name}
                                         >
-                                            <i className={`fa fa-2x ${icon}`} aria-hidden="true" />
+                                            {/*<span className="fa-stack fa-lg">*/}
+                                                {/*<i className="fa fa-circle fa-stack-2x" />*/}
+                                                {/*<i className={`fa ${icon} fa-stack-1x fa-inverse`} aria-hidden="true" />*/}
+                                            {/*</span>*/}
+                                            <i className={`fa ${icon}`} aria-hidden="true" />
                                         </a>
                                     ))
                                 }
                             </div>
-                            <div className="summary">
-                                <ul>{this.props.profile.summary.map((summary, index) => <li key={index}>{summary}</li>)}</ul>
-                            </div>
                         </div>
                         {/*<img className="profile-pic" src={profilePic} alt="profile" />*/}
                     </div>
-                    <LanguageListComponent languageList={this.props.profile.languageList}/>
-                    <FrameworkListComponent frameworkList={this.props.profile.frameworkList}/>
-                    <EducationListComponent educationList={this.props.profile.educationList}/>
-                    <ExperienceListComponent experienceList={this.props.profile.experienceList}/>
-                    {/*<ProjectListComponent projectList={this.props.profile.projectList}/>*/}
+
                 </div>
-            </Paper>
+            </div>
         );
     }
 }

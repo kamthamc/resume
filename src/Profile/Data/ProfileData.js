@@ -19,19 +19,19 @@ export const ProfileData = {
     profilePic: 'Assets/ProfilePic.png',
     social: [
         {
+            name: 'twitter',
+            url: 'https://twitter.com/gangaraju4u',
+            icon: 'fa-twitter',
+        },
+        {
             name: 'linkedin',
             url: 'https://www.linkedin.com/in/kamthamc/',
-            icon: 'fa-linkedin-square',
+            icon: 'fa-linkedin',
         },
         {
             name: 'github',
             url: 'https://github.com/kamthamc',
-            icon: 'fa-github-square',
-        },
-        {
-            name: 'twitter',
-            url: 'https://twitter.com/gangaraju4u',
-            icon: 'fa-twitter-square',
+            icon: 'fa-github',
         }
     ],
     projectList: [],
