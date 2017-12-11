@@ -5,7 +5,7 @@
  *
  * */
 
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import Paper from 'material-ui/Paper';
 
 import { EducationListComponent } from './Education/EducationListComponent';
@@ -13,62 +13,49 @@ import { EducationListComponent } from './Education/EducationListComponent';
 import { ExperienceListComponent } from './Experience/ExperienceListComponent';
 import {LanguageListComponent} from './Language/LanguageListComponent';
 
-import './ProfileComponent.css';
 import {FrameworkListComponent} from './Framework/FrameworkListComponent';
+import './ProfileComponent.css';
 
 
-export class ProfileComponent extends Component {
+export class ProfileComponent extends PureComponent {
 
     render() {
+        const { title, subtitle, email, phone, social, profilePic } = this.props.profile;
         return (
             <Paper className="profile-container">
                 <div className="profile">
                     <div className="info">
                         <div className="details">
-                            <h1>Chaitanya Kumar Kamatham</h1>
+                            <h4>{title}</h4>
+                            <h6>{subtitle}</h6>
                             <div>
-                                <i className="material-icons">mail</i> k.chaitanya_kumar@yahoo.com
+                                <i className="material-icons">mail</i> {email}
                             </div>
                             <div>
-                                <i className="material-icons">phone</i> (516) 637 - 6456
+                                <i className="material-icons">phone</i> {phone}
                             </div>
                             <div>
                                 <h5>Social Profiles</h5>
-                                <a
-                                    href="https://www.linkedin.com/in/kamthamc/"
-                                    className="linkedin"
-                                    target="blank"
-                                    title="kamthamc"
-                                    aria-label="linkedin"
-                                >
-                                    <i className="fa fa-2x fa-linkedin-square" aria-hidden="true" />
-                                </a>
-                                <a
-                                    href="https://github.com/kamthamc"
-                                    className="github"
-                                    target="blank"
-                                    title="kamthamc"
-                                    aria-label="github"
-                                >
-                                    <i className="fa fa-2x fa-github-square" aria-hidden="true"/>
-                                </a>
-                                <a
-                                    href="https://twitter.com/gangaraju4u"
-                                    className="twitter"
-                                    target="blank"
-                                    title="gangaraju4u"
-                                    aria-label="twitter"
-                                >
-                                    <i className="fa fa-2x fa-twitter-square"
-                                       aria-hidden="true"/>
-                                </a>
-
+                                {
+                                    social.map(({ name, url, icon }) => (
+                                        <a
+                                            key={name}
+                                            href={url}
+                                            className={name}
+                                            target="blank"
+                                            title={name}
+                                            aria-label={name}
+                                        >
+                                            <i className={`fa fa-2x ${icon}`} aria-hidden="true" />
+                                        </a>
+                                    ))
+                                }
                             </div>
                             <div className="summary">
                                 <ul>{this.props.profile.summary.map((summary, index) => <li key={index}>{summary}</li>)}</ul>
                             </div>
                         </div>
-                        <img className="profile-pic" src="Assets/ProfilePic.png" alt="profile" />
+                        {/*<img className="profile-pic" src={profilePic} alt="profile" />*/}
                     </div>
                     <LanguageListComponent languageList={this.props.profile.languageList}/>
                     <FrameworkListComponent frameworkList={this.props.profile.frameworkList}/>

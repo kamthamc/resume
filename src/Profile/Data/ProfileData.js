@@ -6,11 +6,33 @@
  * */
 
 export const ProfileData = {
+    title: 'Chaitanya Kumar Kamatham',
+    subtitle: 'Software Engineer & UI/UX Expert',
+    email: 'k.chaitanya_kumar@yahoo.com',
+    phone: '(516) 637 - 6456',
     summary: [
         'Diversified skill set covering application and framework development. ',
         'Hands-on Involvement in both Front-end and Back-end development. ',
         'Diverse experience and deep knowledge of multiple programming languages. ',
         'Quick learner and can easily adopt new languages and technologies.'
+    ],
+    profilePic: 'Assets/ProfilePic.png',
+    social: [
+        {
+            name: 'linkedin',
+            url: 'https://www.linkedin.com/in/kamthamc/',
+            icon: 'fa-linkedin-square',
+        },
+        {
+            name: 'github',
+            url: 'https://github.com/kamthamc',
+            icon: 'fa-github-square',
+        },
+        {
+            name: 'twitter',
+            url: 'https://twitter.com/gangaraju4u',
+            icon: 'fa-twitter-square',
+        }
     ],
     projectList: [],
     educationList: [
