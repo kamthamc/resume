@@ -1,0 +1,80 @@
+.Timeline {
+    position: relative;
+    margin-top: 50px;
+    &::after {
+        content: '';
+        position: absolute;
+        width: 6px;
+        background-color: #06A763;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -3px;
+    }
+
+
+    .timelineBlock {
+        padding: 10px 40px;
+        position: relative;
+        background-color: inherit;
+        width: 50%;
+        box-sizing: border-box;
+        .timelineDot {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            right: -25px;
+            background-color: #06A763;
+            top: 10px;
+            border-radius: 50%;
+            z-index: 1;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            h6 {
+                text-align: center;
+                padding: 0;
+                font-size: 14px;
+                font-weight: bold;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29);
+            }
+        }
+        &:nth-child(odd) {
+            left: 0;
+            &::before {
+                content: " ";
+                height: 5px;
+                position: absolute;
+                top: 35px;
+                width: 20px;
+                z-index: 1;
+                right: 25px;
+                background-color: #06A763;
+            }
+        }
+        &:nth-child(even) {
+            left: 50%;
+            &::before {
+                content: " ";
+                height: 5px;
+                position: absolute;
+                top: 35px;
+                width: 20px;
+                z-index: 1;
+                left: 25px;
+                background-color: #06A763;
+            }
+            .timelineDot {
+                left: -25px;
+            }
+        }
+        .timelineContent {
+            padding: 20px 30px;
+            background-color: #06A763;
+            position: relative;
+            border-radius: 6px;
+        }
+    }
+}

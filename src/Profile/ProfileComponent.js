@@ -15,12 +15,13 @@ import {LanguageListComponent} from './Language/LanguageListComponent';
 
 import {FrameworkListComponent} from './Framework/FrameworkListComponent';
 import './ProfileComponent.css';
+import Timeline from './Timeline/Timeline';
 
 
 export class ProfileComponent extends PureComponent {
 
     render() {
-        const { title, subtitle, email, phone, social, profilePic, description } = this.props.profile;
+        const { title, subtitle, email, phone, social, profilePic, description, experienceList } = this.props.profile;
         return (
             <div className="ProfileContainer">
                 <div className="profile">
@@ -72,7 +73,7 @@ export class ProfileComponent extends PureComponent {
                             </div>
                         </div>
                     </Paper>
-
+                    <Timeline events={experienceList}/>
                 </div>
             </div>
         );

@@ -18,7 +18,7 @@ export const ProfileData = {
     ],
     description: 'Hello! I’m John Doe. Senior Web Developer with over 13 years of experience specializing in front end development. ' +
     'Experienced with all stages of the development cycle for dynamic web projects.Having an in-depth knowledge including advanced HTML5, ' +
-    'CSS, CSS3, SASS, LESS, JSON, Java, JavaScript, React, Angular JS. Strong background in management and leadership.',
+    'CSS, CSS3, SASS, LESS, JSON, Java, JavaScript, React, Angular JS.',
     profilePic: 'Assets/ProfilePic.png',
     social: [
         {
@@ -205,5 +205,5 @@ export const ProfileData = {
                 'Worked on development of various games on Android and Symbian platforms.',
             ],
         },
-    ],
+    ]
 };
