@@ -20,16 +20,11 @@ import './ProfileComponent.css';
 export class ProfileComponent extends PureComponent {
 
     render() {
-        const { title, subtitle, email, phone, social, profilePic } = this.props.profile;
+        const { title, subtitle, email, phone, social, profilePic, description } = this.props.profile;
         return (
             <div className="ProfileContainer">
                 <div className="profile">
                     <div className="info">
-                        <div id="profile" className="right">
-                            <img className="profile-pic" src={profilePic} alt="profile" />
-                            <div className="slant" />
-                            <div className="btn-floating btn-large add-btn"><i className="material-icons">add</i></div>
-                        </div>
                         <div className="details">
                             <h4>{title}</h4>
                             <h6>{subtitle}</h6>
@@ -60,8 +55,23 @@ export class ProfileComponent extends PureComponent {
                                 }
                             </div>
                         </div>
+                        <div className="titlePic">
+                            <img src={profilePic} alt="profile" />
+                            <div className="slant" />
+                            <div className="btn-floating btn-large add-btn"><i className="material-icons">add</i></div>
+                        </div>
+
                         {/*<img className="profile-pic" src={profilePic} alt="profile" />*/}
                     </div>
+                    <Paper className="description">
+                        <p>{description}</p>
+                        <div id="about-btn" className="actions">
+                            <div className="about-btn">
+                                <a href="#" className="btn waves-effect">Download CV</a>
+                                <a href="#contact" className="btn waves-effect">Contact Me</a>
+                            </div>
+                        </div>
+                    </Paper>
 
                 </div>
             </div>

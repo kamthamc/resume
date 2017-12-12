@@ -16,6 +16,9 @@ export const ProfileData = {
         'Diverse experience and deep knowledge of multiple programming languages. ',
         'Quick learner and can easily adopt new languages and technologies.'
     ],
+    description: 'Hello! I’m John Doe. Senior Web Developer with over 13 years of experience specializing in front end development. ' +
+    'Experienced with all stages of the development cycle for dynamic web projects.Having an in-depth knowledge including advanced HTML5, ' +
+    'CSS, CSS3, SASS, LESS, JSON, Java, JavaScript, React, Angular JS. Strong background in management and leadership.',
     profilePic: 'Assets/ProfilePic.png',
     social: [
         {
