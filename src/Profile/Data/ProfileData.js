@@ -43,21 +43,21 @@ export const ProfileData = {
             begin: 1328058322814,
             end: 1387858326272,
             university: 'Indiana University - Purdue University, Indianapolis',
-            universityUrl: 'http://iupui.edu',
+            universityUrl: '//iupui.edu',
             gpa: 3,
             location: 'Indianapolis, Indiana',
             degree: 'Computer & Information Science',
             description: 'Pursued Computer and Information Science.'
         },
         {
-            begin: 1328058322814,
-            end: 1387858326272,
-            university: 'Indiana University - Purdue University, Indianapolis',
-            universityUrl: 'http://iupui.edu',
+            begin: 1157169661003,
+            end: 1272772883544,
+            university: 'CVR College of Engineering',
+            universityUrl: '//cvr.ac.in',
             gpa: 3,
-            location: 'Indianapolis, Indiana',
-            degree: 'Computer & Information Science',
-            description: 'Pursued Computer and Information Science.'
+            location: 'Hyderabad, India',
+            degree: 'Computer Science',
+            description: 'Pursued Computer Science.'
         }
     ],
     languageList: [

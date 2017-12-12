@@ -27,7 +27,12 @@ const timeLineEvents = (data) => {
 };
 
 const EducationListComponent = ({ educationList }) => {
-  return <Timeline events={timeLineEvents(educationList)} className="EducationTimeline"/>;
+  return <div className="EducationList">
+      <div className="header">
+          <h4><span><i className="material-icons">library_books</i></span>Education</h4>
+      </div>
+      <Timeline events={timeLineEvents(educationList)} className="EducationTimeline"/>
+  </div>;
 };
 
 export default EducationListComponent;
