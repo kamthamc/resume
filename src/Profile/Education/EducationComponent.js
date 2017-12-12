@@ -17,14 +17,15 @@ export class EducationComponent extends Component {
     render() {
         let {education} = this.props;
         return (
-            <li className="education">
-                <p>
-                    <a href={education.universityUrl} target="blank"><span>{education.university}</span></a> at
-                    <span>{education.location}</span>
-                    <span>[ {formatDate(education.begin)} - {formatDate(education.end)} ]</span>
-                    <span>GPA: {education.gpa}</span>
-                </p>
-            </li>
+            <div className="education">
+                <a href={education.universityUrl} target="blank"><h4>{education.university}</h4></a>
+                <h6>{education.location}</h6>
+                <h6>{formatDate(education.begin)} - {formatDate(education.end)}</h6>
+                {
+                    education.description &&
+                    <p>{education.description}</p>
+                }
+            </div>
         );
     }
 }

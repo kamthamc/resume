@@ -8,7 +8,7 @@
 import React, { PureComponent } from 'react';
 import Paper from 'material-ui/Paper';
 
-import { EducationListComponent } from './Education/EducationListComponent';
+import EducationListComponent from './Education/EducationListComponent';
 // import { ProjectListComponent } from './Project/ProjectListComponent';
 import { ExperienceListComponent } from './Experience/ExperienceListComponent';
 import {LanguageListComponent} from './Language/LanguageListComponent';
@@ -21,7 +21,17 @@ import Timeline from './Timeline/Timeline';
 export class ProfileComponent extends PureComponent {
 
     render() {
-        const { title, subtitle, email, phone, social, profilePic, description, experienceList } = this.props.profile;
+        const {
+            title,
+            subtitle,
+            email,
+            phone,
+            social,
+            profilePic,
+            description,
+            experienceList,
+            educationList
+        } = this.props.profile;
         return (
             <div className="ProfileContainer">
                 <div className="profile">
@@ -73,7 +83,7 @@ export class ProfileComponent extends PureComponent {
                             </div>
                         </div>
                     </Paper>
-                    <Timeline events={experienceList}/>
+                    <EducationListComponent educationList={educationList}/>
                 </div>
             </div>
         );

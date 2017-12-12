@@ -14,34 +14,13 @@
 
 
     .timelineBlock {
-        padding: 10px 40px;
         position: relative;
         background-color: inherit;
         width: 50%;
         box-sizing: border-box;
-        .timelineDot {
-            position: absolute;
-            width: 50px;
-            height: 50px;
-            right: -25px;
-            background-color: #06A763;
-            top: 10px;
-            border-radius: 50%;
-            z-index: 1;
 
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #ffffff;
-            h6 {
-                text-align: center;
-                padding: 0;
-                font-size: 14px;
-                font-weight: bold;
-                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29);
-            }
-        }
         &:nth-child(odd) {
+            padding: 10px 40px 10px 20px;
             left: 0;
             &::before {
                 content: " ";
@@ -55,6 +34,7 @@
             }
         }
         &:nth-child(even) {
+            padding: 10px 20px 10px 40px;
             left: 50%;
             &::before {
                 content: " ";
@@ -70,11 +50,45 @@
                 left: -25px;
             }
         }
-        .timelineContent {
+    }
+
+    .timelineContent {
+        background-color: #06A763;
+        position: relative;
+        border-left: 5px solid #1976D2;
+        border-radius: 0 0 2px 2px;
+        visibility: visible;
+        opacity: 1;
+        z-index: 2;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        &:nth-child(odd) {
             padding: 20px 30px;
-            background-color: #06A763;
-            position: relative;
-            border-radius: 6px;
+        }
+        &:nth-child(even) {
+            padding: 30px 20px;
+        }
+    }
+
+    .timelineDot {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        right: -25px;
+        background-color: #06A763;
+        top: 10px;
+        border-radius: 50%;
+        z-index: 1;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        h6 {
+            text-align: center;
+            padding: 0;
+            font-size: 14px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29);
         }
     }
 }

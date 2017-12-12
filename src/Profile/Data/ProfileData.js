@@ -40,13 +40,24 @@ export const ProfileData = {
     projectList: [],
     educationList: [
         {
-            begin: 1493426735000,
-            end: 1493426735000,
+            begin: 1328058322814,
+            end: 1387858326272,
             university: 'Indiana University - Purdue University, Indianapolis',
             universityUrl: 'http://iupui.edu',
             gpa: 3,
             location: 'Indianapolis, Indiana',
-            degree: 'Computer & Information Science'
+            degree: 'Computer & Information Science',
+            description: 'Pursued Computer and Information Science.'
+        },
+        {
+            begin: 1328058322814,
+            end: 1387858326272,
+            university: 'Indiana University - Purdue University, Indianapolis',
+            universityUrl: 'http://iupui.edu',
+            gpa: 3,
+            location: 'Indianapolis, Indiana',
+            degree: 'Computer & Information Science',
+            description: 'Pursued Computer and Information Science.'
         }
     ],
     languageList: [

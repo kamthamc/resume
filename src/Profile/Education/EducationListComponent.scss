@@ -1,25 +1,30 @@
-.education-list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    margin: 5px 0;
+.education {
+    padding: 5px;
+    color: #616161;
 
-    .education {
-        flex: 1;
-        padding: 0;
-        p {
-            margin: 0;
-            span, address {
-                margin: 5px 2px;
-                display: inline-block;
-                padding: 2px;
-            }
-        }
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+    h4 {
+        font-weight: normal;
+        font-size: 1.4em;
+        margin: 10px 0;
+        line-height: 1.1;
+        text-decoration: none;
+    }
+    h6 {
+        color: #777;
+        font-size: .75em;
+        margin: 10px 0;
+        font-weight: 400;
     }
 }
 
-.education-list-container {
-    h4 {
-        margin: 5px 0;
+.EducationTimeline {
+    .timelineBlock {
+        > .timelineContent {
+            background-color: white;
+        }
     }
 }
