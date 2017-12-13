@@ -30,7 +30,7 @@ export class ProfileComponent extends PureComponent {
             profilePic,
             description,
             experienceList,
-            educationList
+            educationList,
         } = this.props.profile;
         return (
             <div className="ProfileContainer">
@@ -84,6 +84,7 @@ export class ProfileComponent extends PureComponent {
                         </div>
                     </Paper>
                     <EducationListComponent educationList={educationList}/>
+                    <ExperienceListComponent experienceList={experienceList}/>
                 </div>
             </div>
         );

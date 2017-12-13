@@ -12,20 +12,15 @@ const formatDate = (dateNum) => {
     return moment(dateNum).format('MMM YYYY')
 };
 
-export class EducationComponent extends Component {
 
-    render() {
-        let {education} = this.props;
-        return (
-            <div className="education">
-                <a href={education.universityUrl} target="blank"><h4>{education.university}</h4></a>
-                <h6>{education.location}</h6>
-                <h6>{formatDate(education.begin)} - {formatDate(education.end)}</h6>
-                {
-                    education.description &&
-                    <p>{education.description}</p>
-                }
-            </div>
-        );
-    }
-}
+export const EducationComponent = ({ education }) => (
+    <div className="education">
+        <a href={education.universityUrl} target="blank"><h4>{education.university}</h4></a>
+        <h6>{education.location}</h6>
+        <h6>{formatDate(education.begin)} - {formatDate(education.end)}</h6>
+        {
+            education.description &&
+            <p>{education.description}</p>
+        }
+    </div>
+);

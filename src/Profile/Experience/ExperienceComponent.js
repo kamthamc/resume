@@ -15,23 +15,16 @@ const formatDate = (dateNum) => {
     return 'Current';
 };
 
-export class ExperienceComponent extends Component {
+export const ExperienceComponent = ({ experience }) => (
+    <div className="education">
+        <a href={experience.companyUrl} target="blank"><h4>{experience.company}</h4></a>
+        <h6>{experience.location}</h6>
+        <h6>{formatDate(experience.begin)} - {formatDate(experience.end)}</h6>
+        {
+            experience.noteList.map((note, index) => {
+                return <p key={index}>{note}</p>
+            })
+        }
+    </div>
+);
 
-    render() {
-        let { experience } = this.props;
-        return (
-            <li className="experience">
-                <p>
-                    <a href={experience.companyUrl} target="blank"><span>{experience.company}</span></a> at
-                    <span>{experience.location}</span>
-                    <span>[ {formatDate(experience.begin)} - {formatDate(experience.end)} ]</span>
-                </p>
-                <ul>
-                    {experience.noteList.map((note, index) => {
-                        return <li key={index}>{note}</li>
-                    })}
-                </ul>
-            </li>
-        );
-    }
-}
