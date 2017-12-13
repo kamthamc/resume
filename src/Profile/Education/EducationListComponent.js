@@ -21,7 +21,7 @@ const timeLineEvents = (data) => {
     const events = [];
     data.forEach(education => events.push({
         content: <EducationComponent education={education}/>,
-        pointer: formatDate(education.begin),
+        pointer: education.degree[0],
         id: education.end,
     }));
     return events;

@@ -46,8 +46,8 @@ export const ProfileData = {
             universityUrl: '//iupui.edu',
             gpa: 3,
             location: 'Indianapolis, Indiana',
-            degree: 'Computer & Information Science',
-            description: 'Pursued Computer and Information Science.'
+            degree: 'Masters in Computer & Information Science',
+            description: 'Pursued Computer and Information Science.',
         },
         {
             begin: 1157169661003,
@@ -56,8 +56,8 @@ export const ProfileData = {
             universityUrl: '//cvr.ac.in',
             gpa: 3,
             location: 'Hyderabad, India',
-            degree: 'Computer Science',
-            description: 'Pursued Computer Science.'
+            degree: 'Bachelors in Computer Science & Engineering',
+            description: 'Pursued Computer Science.',
         }
     ],
     languageList: [

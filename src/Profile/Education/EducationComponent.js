@@ -13,14 +13,24 @@ const formatDate = (dateNum) => {
 };
 
 
-export const EducationComponent = ({ education }) => (
+export const EducationComponent = ({ education: {
+    universityUrl,
+    university,
+    location,
+    degree,
+    begin,
+    end,
+    description
+
+} }) => (
     <div className="education">
-        <a href={education.universityUrl} target="blank"><h4>{education.university}</h4></a>
-        <h6>{education.location}</h6>
-        <h6>{formatDate(education.begin)} - {formatDate(education.end)}</h6>
+        <a href={universityUrl} target="blank"><h4>{university}</h4></a>
+        <h6>{location}</h6>
+        <h6>{degree}</h6>
+        <h6>{formatDate(begin)} - {formatDate(end)}</h6>
         {
-            education.description &&
-            <p>{education.description}</p>
+            description &&
+            <p>{description}</p>
         }
     </div>
 );
