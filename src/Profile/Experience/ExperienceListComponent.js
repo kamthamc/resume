@@ -23,7 +23,7 @@ const timeLineEvents = (data) => {
     data.forEach(experience => events.push({
         content: <ExperienceComponent experience={experience}/>,
         pointer: formatDate(experience.begin),
-        id: experience.end,
+        id: experience.end || 'current',
     }));
     return events;
 };

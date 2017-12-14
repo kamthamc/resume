@@ -5,17 +5,11 @@
  *
  * */
 
-import React, { Component } from 'react';
-import {EducationComponent} from './EducationComponent';
+import React from 'react';
+import { EducationComponent } from './EducationComponent';
 import Timeline from '../Timeline/Timeline';
-import moment from 'moment/moment';
 
 import './EducationListComponent.css';
-
-const formatDate = (dateNum) => {
-    return moment(dateNum).format('MMM YYYY')
-};
-
 
 const timeLineEvents = (data) => {
     const events = [];

@@ -11,11 +11,8 @@ import Paper from 'material-ui/Paper';
 import EducationListComponent from './Education/EducationListComponent';
 // import { ProjectListComponent } from './Project/ProjectListComponent';
 import { ExperienceListComponent } from './Experience/ExperienceListComponent';
-import {LanguageListComponent} from './Language/LanguageListComponent';
-
-import {FrameworkListComponent} from './Framework/FrameworkListComponent';
+import { Skills } from './Skills/Skills';
 import './ProfileComponent.css';
-import Timeline from './Timeline/Timeline';
 
 
 export class ProfileComponent extends PureComponent {
@@ -31,6 +28,8 @@ export class ProfileComponent extends PureComponent {
             description,
             experienceList,
             educationList,
+            frameworkList,
+            languageList,
         } = this.props.profile;
         return (
             <div className="ProfileContainer">
@@ -56,10 +55,6 @@ export class ProfileComponent extends PureComponent {
                                             title={name}
                                             aria-label={name}
                                         >
-                                            {/*<span className="fa-stack fa-lg">*/}
-                                                {/*<i className="fa fa-circle fa-stack-2x" />*/}
-                                                {/*<i className={`fa ${icon} fa-stack-1x fa-inverse`} aria-hidden="true" />*/}
-                                            {/*</span>*/}
                                             <i className={`fa ${icon}`} aria-hidden="true" />
                                         </a>
                                     ))
@@ -78,13 +73,14 @@ export class ProfileComponent extends PureComponent {
                         <p>{description}</p>
                         <div id="about-btn" className="actions">
                             <div className="about-btn">
-                                <a href="#" className="btn waves-effect">Download CV</a>
-                                <a href="#contact" className="btn waves-effect">Contact Me</a>
+                                <a href="./resume.pdf" className="btn waves-effect">Download CV</a>
+                                <a href={`mailto:'chaitanya Kamatham'<${email}>`} className="btn waves-effect">Contact Me</a>
                             </div>
                         </div>
                     </Paper>
-                    <EducationListComponent educationList={educationList}/>
+                    <Skills languageList={languageList} frameworkList={frameworkList}/>
                     <ExperienceListComponent experienceList={experienceList}/>
+                    <EducationListComponent educationList={educationList}/>
                 </div>
             </div>
         );

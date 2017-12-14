@@ -1,4 +1,4 @@
-.education {
+.experience {
     padding: 5px;
     color: #616161;
 
@@ -18,6 +18,10 @@
         font-size: .75em;
         margin: 10px 0;
         font-weight: 400;
+    }
+    p.note:before {
+        content: '* ';
+        font-weight: bold;
     }
 }
 

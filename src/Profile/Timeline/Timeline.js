@@ -2,17 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import './Timeline.css';
-import moment from 'moment/moment';
 
-
-const Timeline = (props) => {
+const Timeline = ({ className, events }) => {
     return (
-        <div className={`Timeline ${props.className}`}>
+        <div className={`Timeline ${className}`}>
             {
-                props.events.map((event) => (
-                    <div className="timelineBlock" key={event.id}>
-                        <div className="timelineDot"><h6>{event.pointer}</h6></div>
-                        <div className="timelineContent">{event.content}</div>
+                events.map(({ id, content, pointer }) => (
+                    <div className="timelineBlock" key={id} data-id={id}>
+                        <div className="timelineDot"><h6>{pointer}</h6></div>
+                        <div className="timelineContent">{content}</div>
                     </div>
                 ))
             }

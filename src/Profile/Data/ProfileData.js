@@ -7,7 +7,7 @@
 
 export const ProfileData = {
     title: 'Chaitanya Kumar Kamatham',
-    subtitle: 'Software Engineer & UI/UX Expert',
+    subtitle: 'Software Engineer & UI Expert',
     email: 'k.chaitanya_kumar@yahoo.com',
     phone: '(516) 637 - 6456',
     summary: [
@@ -40,8 +40,8 @@ export const ProfileData = {
     projectList: [],
     educationList: [
         {
-            begin: '1/12/2012',
-            end: '12/12/2013',
+            begin: '2012-12-01',
+            end: '2013-12-12',
             university: 'Indiana University - Purdue University, Indianapolis',
             universityUrl: 'http://iupui.edu',
             gpa: 3,
@@ -50,8 +50,8 @@ export const ProfileData = {
             description: 'Pursued Computer and Information Science.',
         },
         {
-            begin: '1/9/2006',
-            end: '1/5/2010',
+            begin: '2006-09-01',
+            end: '2010-05-01',
             university: 'CVR College of Engineering',
             universityUrl: 'http://cvr.ac.in',
             gpa: 3,
@@ -67,7 +67,7 @@ export const ProfileData = {
         },
         {
             "name": "Sass",
-            "rating": 6
+            "rating": 7
         },
         {
             "name": "Typescript",
@@ -92,15 +92,20 @@ export const ProfileData = {
     ],
     frameworkList: [
         {
-            name: 'React'
+            name: 'React',
+            rating: 8,
         }, {
-            name: 'Angular 4'
+            name: 'Angular 4',
+            rating: 6,
         }, {
-            name: 'Bootstrap'
+            name: 'Bootstrap',
+            rating: 7,
         }, {
-            name: 'Laravel'
+            name: 'Laravel',
+            rating: 6,
         }, {
-            name: 'Spring'
+            name: 'Spring',
+            rating: 6,
         }
     ],
     skillList: [
@@ -124,7 +129,10 @@ export const ProfileData = {
             companyUrl: 'http://pearson.com',
             role: 'Software Developer',
             location: 'Fremont, CA',
-            noteList: [],
+            noteList: [
+                'Responsible for creating responsive react components with internationalisation & accessibility support.',
+                'Responsible for integrating various react components into main application.'
+            ],
         },
         {
             begin: 1475305200000,
@@ -162,7 +170,7 @@ export const ProfileData = {
             begin: 1404198000000,
             end: 1409554800000,
             company: 'Apple',
-            companyUrl: '',
+            companyUrl: 'https://apple.com',
             location: 'Sunnyvale, CA',
             role: 'Front End Developer',
             noteList: [
@@ -177,7 +185,7 @@ export const ProfileData = {
             begin: 1367391600000,
             end: 1385884800000,
             company: 'Indiana University',
-            companyUrl: '',
+            companyUrl: 'https://www.indiana.edu/',
             role: 'Research Assistant and Web Developer',
             location: 'Indianapolis, IN',
             noteList: [
@@ -192,7 +200,7 @@ export const ProfileData = {
             begin: 1325404800000,
             end: 1367391600000,
             company: 'Indiana University School of Medicine',
-            companyUrl: '',
+            companyUrl: 'https://www.indiana.edu/',
             role: 'Research Assistant and Web Developer',
             location: 'Indianapolis, IN',
             noteList: [
@@ -207,7 +215,7 @@ export const ProfileData = {
             begin: 1277967600000,
             end: 1296547200000,
             company: 'Electronic Arts',
-            companyUrl: '',
+            companyUrl: 'https://ea.com',
             role: 'Associate software engineer',
             location: 'Hyderabad, India',
             noteList: [
