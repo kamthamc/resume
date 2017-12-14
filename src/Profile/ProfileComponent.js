@@ -5,78 +5,84 @@
  *
  * */
 
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import Paper from 'material-ui/Paper';
 
-import { EducationListComponent } from './Education/EducationListComponent';
+import EducationListComponent from './Education/EducationListComponent';
 // import { ProjectListComponent } from './Project/ProjectListComponent';
 import { ExperienceListComponent } from './Experience/ExperienceListComponent';
-import {LanguageListComponent} from './Language/LanguageListComponent';
-
+import { Skills } from './Skills/Skills';
 import './ProfileComponent.css';
-import {FrameworkListComponent} from './Framework/FrameworkListComponent';
 
 
-export class ProfileComponent extends Component {
+export class ProfileComponent extends PureComponent {
 
     render() {
+        const {
+            title,
+            subtitle,
+            email,
+            phone,
+            social,
+            profilePic,
+            description,
+            experienceList,
+            educationList,
+            frameworkList,
+            languageList,
+        } = this.props.profile;
         return (
-            <Paper className="profile-container">
+            <div className="ProfileContainer">
                 <div className="profile">
                     <div className="info">
                         <div className="details">
-                            <h1>Chaitanya Kumar Kamatham</h1>
-                            <div>
-                                <i className="material-icons">mail</i> k.chaitanya_kumar@yahoo.com
-                            </div>
-                            <div>
-                                <i className="material-icons">phone</i> (516) 637 - 6456
-                            </div>
-                            <div>
-                                <h5>Social Profiles</h5>
-                                <a
-                                    href="https://www.linkedin.com/in/kamthamc/"
-                                    className="linkedin"
-                                    target="blank"
-                                    title="kamthamc"
-                                    aria-label="linkedin"
-                                >
-                                    <i className="fa fa-2x fa-linkedin-square" aria-hidden="true" />
-                                </a>
-                                <a
-                                    href="https://github.com/kamthamc"
-                                    className="github"
-                                    target="blank"
-                                    title="kamthamc"
-                                    aria-label="github"
-                                >
-                                    <i className="fa fa-2x fa-github-square" aria-hidden="true"/>
-                                </a>
-                                <a
-                                    href="https://twitter.com/gangaraju4u"
-                                    className="twitter"
-                                    target="blank"
-                                    title="gangaraju4u"
-                                    aria-label="twitter"
-                                >
-                                    <i className="fa fa-2x fa-twitter-square"
-                                       aria-hidden="true"/>
-                                </a>
-
-                            </div>
-                            <div className="summary">
-                                <ul>{this.props.profile.summary.map((summary, index) => <li key={index}>{summary}</li>)}</ul>
+                            <h4>{title}</h4>
+                            <h6>{subtitle}</h6>
+                            <p>
+                                <i className="material-icons">mail</i> {email}
+                            </p>
+                            <p>
+                                <i className="material-icons">phone</i> {phone}
+                            </p>
+                            <div className="social">
+                                {
+                                    social.map(({ name, url, icon }) => (
+                                        <a
+                                            key={name}
+                                            href={url}
+                                            className={name}
+                                            target="blank"
+                                            title={name}
+                                            aria-label={name}
+                                        >
+                                            <i className={`fa ${icon}`} aria-hidden="true" />
+                                        </a>
+                                    ))
+                                }
                             </div>
                         </div>
-                        <img className="profile-pic" src="Assets/ProfilePic.png" alt="profile" />
+                        <div className="titlePic">
+                            <img src={profilePic} alt="profile" />
+                            <div className="slant" />
+                            <div className="btn-floating btn-large add-btn"><i className="material-icons">add</i></div>
+                        </div>
+
+                        {/*<img className="profile-pic" src={profilePic} alt="profile" />*/}
                     </div>
-                    <LanguageListComponent languageList={this.props.profile.languageList}/>
-                    <FrameworkListComponent frameworkList={this.props.profile.frameworkList}/>
-                    <EducationListComponent educationList={this.props.profile.educationList}/>
-                    <ExperienceListComponent experienceList={this.props.profile.experienceList}/>
-                    {/*<ProjectListComponent projectList={this.props.profile.projectList}/>*/}
+                    <Paper className="description">
+                        <p>{description}</p>
+                        <div id="about-btn" className="actions">
+                            <div className="about-btn">
+                                <a href="./resume.pdf" className="btn waves-effect">Download CV</a>
+                                <a href={`mailto:'chaitanya Kamatham'<${email}>`} className="btn waves-effect">Contact Me</a>
+                            </div>
+                        </div>
+                    </Paper>
+                    <Skills languageList={languageList} frameworkList={frameworkList}/>
+                    <ExperienceListComponent experienceList={experienceList}/>
+                    <EducationListComponent educationList={educationList}/>
                 </div>
-            </Paper>
+            </div>
         );
     }
 }

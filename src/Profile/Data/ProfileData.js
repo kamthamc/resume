@@ -6,22 +6,58 @@
  * */
 
 export const ProfileData = {
+    title: 'Chaitanya Kumar Kamatham',
+    subtitle: 'Software Engineer & UI Expert',
+    email: 'k.chaitanya_kumar@yahoo.com',
+    phone: '(516) 637 - 6456',
     summary: [
         'Diversified skill set covering application and framework development. ',
         'Hands-on Involvement in both Front-end and Back-end development. ',
         'Diverse experience and deep knowledge of multiple programming languages. ',
         'Quick learner and can easily adopt new languages and technologies.'
     ],
+    description: 'Hello! I’m Chaitanya. Senior Web Developer with over 5 years of experience specializing in front end development. ' +
+    'Experienced with all stages of the development cycle for dynamic web projects. Having an in-depth knowledge including advanced HTML5, ' +
+    'CSS3, SASS, LESS, JSON, Java, JavaScript, React, Angular JS.',
+    profilePic: 'Assets/ProfilePic.png',
+    social: [
+        {
+            name: 'twitter',
+            url: 'https://twitter.com/gangaraju4u',
+            icon: 'fa-twitter',
+        },
+        {
+            name: 'linkedin',
+            url: 'https://www.linkedin.com/in/kamthamc/',
+            icon: 'fa-linkedin',
+        },
+        {
+            name: 'github',
+            url: 'https://github.com/kamthamc',
+            icon: 'fa-github',
+        }
+    ],
     projectList: [],
     educationList: [
         {
-            begin: 1493426735000,
-            end: 1493426735000,
+            begin: '2012-12-01',
+            end: '2013-12-12',
             university: 'Indiana University - Purdue University, Indianapolis',
             universityUrl: 'http://iupui.edu',
             gpa: 3,
             location: 'Indianapolis, Indiana',
-            degree: 'Computer & Information Science'
+            degree: 'Masters in Computer & Information Science',
+            description: 'Pursued Computer and Information Science.',
+        },
+        {
+            begin: '2006-09-01',
+            end: '2010-05-01',
+            university: 'CVR College of Engineering',
+            universityUrl: 'http://cvr.ac.in',
+            gpa: 3,
+            location: 'Hyderabad, India',
+            degree: 'Bachelors in Computer Science & Engineering',
+            description: 'Pursued Computer Science.',
         }
     ],
     languageList: [
@@ -31,7 +67,7 @@ export const ProfileData = {
         },
         {
             "name": "Sass",
-            "rating": 6
+            "rating": 7
         },
         {
             "name": "Typescript",
@@ -56,15 +92,20 @@ export const ProfileData = {
     ],
     frameworkList: [
         {
-            name: 'React'
+            name: 'React',
+            rating: 8,
         }, {
-            name: 'Angular 4'
+            name: 'Angular 4',
+            rating: 6,
         }, {
-            name: 'Bootstrap'
+            name: 'Bootstrap',
+            rating: 7,
         }, {
-            name: 'Laravel'
+            name: 'Laravel',
+            rating: 6,
         }, {
-            name: 'Spring'
+            name: 'Spring',
+            rating: 6,
         }
     ],
     skillList: [
@@ -88,7 +129,10 @@ export const ProfileData = {
             companyUrl: 'http://pearson.com',
             role: 'Software Developer',
             location: 'Fremont, CA',
-            noteList: [],
+            noteList: [
+                'Responsible for creating responsive react components with internationalisation & accessibility support.',
+                'Responsible for integrating various react components into main application.'
+            ],
         },
         {
             begin: 1475305200000,
@@ -126,7 +170,7 @@ export const ProfileData = {
             begin: 1404198000000,
             end: 1409554800000,
             company: 'Apple',
-            companyUrl: '',
+            companyUrl: 'https://apple.com',
             location: 'Sunnyvale, CA',
             role: 'Front End Developer',
             noteList: [
@@ -141,7 +185,7 @@ export const ProfileData = {
             begin: 1367391600000,
             end: 1385884800000,
             company: 'Indiana University',
-            companyUrl: '',
+            companyUrl: 'https://www.indiana.edu/',
             role: 'Research Assistant and Web Developer',
             location: 'Indianapolis, IN',
             noteList: [
@@ -156,7 +200,7 @@ export const ProfileData = {
             begin: 1325404800000,
             end: 1367391600000,
             company: 'Indiana University School of Medicine',
-            companyUrl: '',
+            companyUrl: 'https://www.indiana.edu/',
             role: 'Research Assistant and Web Developer',
             location: 'Indianapolis, IN',
             noteList: [
@@ -171,7 +215,7 @@ export const ProfileData = {
             begin: 1277967600000,
             end: 1296547200000,
             company: 'Electronic Arts',
-            companyUrl: '',
+            companyUrl: 'https://ea.com',
             role: 'Associate software engineer',
             location: 'Hyderabad, India',
             noteList: [
@@ -180,5 +224,5 @@ export const ProfileData = {
                 'Worked on development of various games on Android and Symbian platforms.',
             ],
         },
-    ],
+    ]
 };
