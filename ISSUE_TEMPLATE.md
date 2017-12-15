@@ -6,4 +6,4 @@
 
 ## What is the expected behavior?
 
-## Which versions of Recharts, and which browser / OS are affected by this issue? Did this work in previous versions of Recharts?
+## Which versions of Resume, and which browser / OS are affected by this issue? Did this work in previous versions of Resume?
