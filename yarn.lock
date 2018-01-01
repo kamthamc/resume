@@ -129,11 +129,11 @@ ansi-styles@^3.0.0, ansi-styles@^3.1.0, ansi-styles@^3.2.0:
   dependencies:
     color-convert "^1.9.0"
 
-antd@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/antd/-/antd-3.0.1.tgz#46d3e05a28e8c19d1298034cab0e03b71e479a2e"
+antd@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/antd/-/antd-3.1.0.tgz#e2c178c8b811fc3becd9402589d6fc4f30438cba"
   dependencies:
-    array-tree-filter "~1.0.0"
+    array-tree-filter "^2.0.0"
     babel-runtime "6.x"
     classnames "~2.2.0"
     create-react-class "^15.6.0"
@@ -145,21 +145,21 @@ antd@^3.0.1:
     omit.js "^1.0.0"
     prop-types "^15.5.7"
     rc-animate "^2.4.1"
-    rc-calendar "~9.3.0"
+    rc-calendar "~9.4.0"
     rc-cascader "~0.12.0"
     rc-checkbox "~2.1.1"
     rc-collapse "~1.7.5"
-    rc-dialog "~7.0.3"
+    rc-dialog "~7.1.0"
     rc-dropdown "~2.1.0"
     rc-editor-mention "^1.0.2"
     rc-form "^2.1.0"
     rc-input-number "~4.0.0"
     rc-menu "~6.2.0"
     rc-notification "~3.0.0"
-    rc-pagination "~1.12.4"
+    rc-pagination "~1.14.0"
     rc-progress "~2.2.2"
-    rc-rate "~2.3.0"
-    rc-select "~7.3.2"
+    rc-rate "~2.4.0"
+    rc-select "~7.5.0"
     rc-slider "~8.5.0"
     rc-steps "~3.0.0"
     rc-switch "~1.6.0"
@@ -172,7 +172,7 @@ antd@^3.0.1:
     rc-upload "~2.4.0"
     rc-util "^4.0.4"
     react-lazy-load "^3.0.12"
-    react-slick "~0.15.4"
+    react-slick "~0.16.0"
     shallowequal "^1.0.1"
     warning "~3.0.0"
 
@@ -257,9 +257,13 @@ array-reduce@~0.0.0:
   version "0.0.0"
   resolved "https://registry.yarnpkg.com/array-reduce/-/array-reduce-0.0.0.tgz#173899d3ffd1c7d9383e4479525dbe278cab5f2b"
 
-array-tree-filter@^1.0.0, array-tree-filter@~1.0.0:
+array-tree-filter@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/array-tree-filter/-/array-tree-filter-1.0.1.tgz#0a8ad1eefd38ce88858632f9cc0423d7634e4d5d"
+
+array-tree-filter@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/array-tree-filter/-/array-tree-filter-2.0.0.tgz#20fbc2d5a0de83242c0a9eb90894d4bfb7e2a69e"
 
 array-union@^1.0.1:
   version "1.0.2"
@@ -5840,9 +5844,9 @@ rc-animate@2.x, rc-animate@^2.0.2, rc-animate@^2.3.0, rc-animate@^2.4.1:
     css-animation "^1.3.2"
     prop-types "15.x"
 
-rc-calendar@~9.3.0:
-  version "9.3.1"
-  resolved "https://registry.yarnpkg.com/rc-calendar/-/rc-calendar-9.3.1.tgz#64b47e5a90de8438fc7f3fb6d16314960eac79a4"
+rc-calendar@~9.4.0:
+  version "9.4.0"
+  resolved "https://registry.yarnpkg.com/rc-calendar/-/rc-calendar-9.4.0.tgz#1fa9dacaabd69120524147916c0357f1bae127d1"
   dependencies:
     babel-runtime "6.x"
     classnames "2.x"
@@ -5880,9 +5884,9 @@ rc-collapse@~1.7.5:
     prop-types "^15.5.6"
     rc-animate "2.x"
 
-rc-dialog@~7.0.3:
-  version "7.0.4"
-  resolved "https://registry.yarnpkg.com/rc-dialog/-/rc-dialog-7.0.4.tgz#a883cb6ef47db406b883b436c1860df1c6c45e64"
+rc-dialog@~7.1.0:
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/rc-dialog/-/rc-dialog-7.1.0.tgz#ffc18c8f799f1cbc343e9f3a1bd9190a1cb62079"
   dependencies:
     babel-runtime "6.x"
     create-react-class "^15.5.2"
@@ -5973,9 +5977,9 @@ rc-notification@~3.0.0:
     rc-animate "2.x"
     rc-util "^4.0.4"
 
-rc-pagination@~1.12.4:
-  version "1.12.11"
-  resolved "https://registry.yarnpkg.com/rc-pagination/-/rc-pagination-1.12.11.tgz#ed0a4ef4d5c44495eebe1fb669daefabdb303f3d"
+rc-pagination@~1.14.0:
+  version "1.14.0"
+  resolved "https://registry.yarnpkg.com/rc-pagination/-/rc-pagination-1.14.0.tgz#c0f34901941b35d65365baf73a5237084042b97e"
   dependencies:
     babel-runtime "6.x"
     prop-types "^15.5.7"
@@ -5987,18 +5991,18 @@ rc-progress@~2.2.2:
     babel-runtime "6.x"
     prop-types "^15.5.8"
 
-rc-rate@~2.3.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/rc-rate/-/rc-rate-2.3.0.tgz#abdaad4bb0a7d250cf8bde58dc84936ade2ba2cb"
+rc-rate@~2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/rc-rate/-/rc-rate-2.4.0.tgz#97ebcc5876e2e498b9f5f65ced256d8ab54e5f06"
   dependencies:
     babel-runtime "^6.26.0"
     classnames "^2.2.5"
     prop-types "^15.5.8"
     rc-util "^4.3.0"
 
-rc-select@~7.3.2:
-  version "7.3.3"
-  resolved "https://registry.yarnpkg.com/rc-select/-/rc-select-7.3.3.tgz#e8294f149416a50b1511eb71ae0c2fbca0b4e5f6"
+rc-select@~7.5.0:
+  version "7.5.0"
+  resolved "https://registry.yarnpkg.com/rc-select/-/rc-select-7.5.0.tgz#157d7546d86d4d8571c7d94ea119b1d7c43e609a"
   dependencies:
     babel-runtime "^6.23.0"
     classnames "2.x"
@@ -6244,9 +6248,9 @@ react-scripts@^1.0.10:
   optionalDependencies:
     fsevents "1.1.2"
 
-react-slick@~0.15.4:
-  version "0.15.4"
-  resolved "https://registry.yarnpkg.com/react-slick/-/react-slick-0.15.4.tgz#6709c87b06e7640feeacc06711be42cc2066aabe"
+react-slick@~0.16.0:
+  version "0.16.0"
+  resolved "https://registry.yarnpkg.com/react-slick/-/react-slick-0.16.0.tgz#27385fb88503d208be081d37267ddec961209a7b"
   dependencies:
     can-use-dom "^0.1.0"
     classnames "^2.2.5"
