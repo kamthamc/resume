@@ -5,7 +5,7 @@
   "homepage": "https://kamthamc.github.io/resume",
   "dependencies": {
     "antd": "^3.1.6",
-    "d3": "^4.13.0",
+    "d3": "^5.0.0",
     "font-awesome": "^4.7.0",
     "material-design-icons": "^3.0.1",
     "material-ui": "^0.20.0",
