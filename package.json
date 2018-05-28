@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://kamthamc.github.io/resume",
   "dependencies": {
-    "antd": "^3.4.1",
+    "antd": "^3.5.4",
     "d3": "^5.0.0",
     "font-awesome": "^4.7.0",
     "material-design-icons": "^3.0.1",
