@@ -11,13 +11,8 @@ cache:
 install:
     yarn install
 
-env:
-    REPO: https://${GIT_TOKEN}@github.com/kamthamc/resume.git
-
 script:
-    git config --global user.email ${GIT_EMAIL} &&
-    yarn run build &&
-    yarn run deploy
+    yarn run build && yarn run deploy
 
 branches:
     only:
