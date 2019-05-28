@@ -6,8 +6,11 @@
 	},
 	"dependencies": {},
 	"scripts": {
-		"build": "lerna bootstrap && lerna run build",
-		"deploy": "lerna bootstrap && lerna run deploy",
-		"release": "lerna bootstrap && lerna run release"
+    "prebuild": "lerna bootstrap",
+		"build": "lerna run build",
+    "predeploy": "lerna bootstrap",
+		"deploy": "lerna run deploy",
+    "prerelease": "lerna bootstrap",
+		"release": "lerna run release"
 	}
 }
