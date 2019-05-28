@@ -1,0 +1,44 @@
+{
+  "name": "resume",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://kamthamc.github.io/resume",
+  "dependencies": {
+    "d3": "^5.0.0",
+    "font-awesome": "^4.7.0",
+    "material-design-icons": "^3.0.1",
+    "material-ui": "^0.20.0",
+    "moment": "^2.22.1",
+    "react": "^16.3.1",
+    "react-dom": "^16.7.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1",
+    "node-sass": "^4.9.0",
+    "npm-run-all": "^4.0.2",
+    "react-scripts": "^3.0.1",
+    "sw-precache": "^5.2.1"
+  },
+  "scripts": {
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build": "npm run build-css && react-scripts build && sw-precache --config=sw-precache-config.js",
+    "test": "npm run build-css && react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "build-css": "node-sass ./src/ -o ./src/",
+    "watch-css": "npm run build-css && node-sass src/ -o src/ --watch --recursive",
+    "deploy": "gh-pages -d build -r $REPO"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
