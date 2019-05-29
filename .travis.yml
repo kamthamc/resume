@@ -4,21 +4,18 @@ node_js:
   - "10"
 
 cache:
-    yarn: false
-    directories:
-        - node_modules
-
-before_install:
-  - git config --local user.name "kamthamc"
-  - git config --local user.email "${GIT_EMAIL}"
-  - export GH_TOKEN=${GH_TOKEN}
+  yarn: false
+  directories:
+    - node_modules
 
 install:
-    npm install
+  npm install
 
 script:
-    make release-ci
+  - git config --local user.name "kamthamc"
+  - git config --local user.email "${GIT_EMAIL}"
+  - GH_TOKEN=${GH_TOKEN} make release-ci
 
 branches:
-    only:
-        - master
+  only:
+    - master

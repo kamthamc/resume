@@ -3,7 +3,7 @@
 bootstrap:
 	npx lerna bootstrap
 	git --version
-	git config --global --list
+	git config --local --list
 	git remote -v
 	git status
 
