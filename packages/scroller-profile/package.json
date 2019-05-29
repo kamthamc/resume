@@ -1,0 +1,57 @@
+{
+  "name": "scroller-profile",
+  "version": "0.2.2",
+  "description": "> TODO: description",
+  "author": "Chaitanya <kamthamc@users.noreply.github.com>",
+  "homepage": "https://github.com/kamthamc/resume/tree/master/packages/scroller-profile#readme",
+  "license": "MIT",
+  "main": "lib/scroller-profile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamthamc/resume.git"
+  },
+  "scripts": {
+    "build": "webpack"
+  },
+  "bugs": {
+    "url": "https://github.com/kamthamc/resume/issues"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
+    "@types/react": "^16.8.17",
+    "@types/react-dom": "^16.8.4",
+    "@types/react-redux": "^7.0.8",
+    "@types/react-router-dom": "^4.3.3",
+    "@types/styled-components": "^4.1.15",
+    "babel-loader": "^8.0.5",
+    "clean-webpack-plugin": "^2.0.2",
+    "css-loader": "^2.1.1",
+    "file-loader": "^3.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "html-webpack-template": "^6.2.0",
+    "ts-loader": "^5.4.5",
+    "typescript": "^3.4.5",
+    "webpack": "^4.31.0",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.3.1"
+  },
+  "dependencies": {
+    "immer": "^3.1.1",
+    "polished": "^3.4.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-intl-universal": "^1.16.1",
+    "react-redux": "^7.0.3",
+    "react-router": "^5.0.0",
+    "react-router-dom": "latest",
+    "redux": "^4.0.1",
+    "redux-devtools-extension": "latest",
+    "redux-saga": "^1.0.2",
+    "reselect": "^4.0.0",
+    "styled-components": "^4.2.0",
+    "typeface-roboto": "0.0.54"
+  }
+}

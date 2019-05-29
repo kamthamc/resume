@@ -3,11 +3,16 @@
   "version": "0.2.3",
   "description": "Resume Data",
   "main": "index.js",
+  "homepage": "https://github.com/kamthamc/resume/tree/master/packages/scroller-profile#readme",
   "scripts": {
     "test": "exit 0",
     "build": "exit 0"
   },
   "author": "Chaitanya Kamatham",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamthamc/resume.git"
+  }
 }
