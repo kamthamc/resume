@@ -9,10 +9,10 @@ cache:
         - node_modules
 
 install:
-    yarn install
+    npm install
 
 script:
-    yarn run build && yarn run deploy
+    make release-ci
 
 branches:
     only:

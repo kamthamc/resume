@@ -2,5 +2,27 @@
   "packages": [
     "packages/*"
   ],
-  "version": "0.0.0"
+  "version": "0.0.0",
+  "command": {
+    "create": {
+      "homepage": "https://github.com/lerna/lerna",
+      "license": "MIT"
+    },
+    "version": {
+      "allowBranch": "master",
+      "conventionalCommits": true,
+      "exact": true,
+      "message": "chore(release): publish %s",
+      "githubRelease": true,
+      "forcePublish": true,
+      "noGitReset": true,
+      "signGitCommit": true,
+      "signGitTag": true
+    }
+  },
+  "ignoreChanges": [
+    "**/__fixtures__/**",
+    "**/__tests__/**",
+    "**/*.md"
+  ]
 }
