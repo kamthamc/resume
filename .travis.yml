@@ -12,8 +12,10 @@ install:
   npm install
 
 script:
-  - git config --global user.name "kamthamc"
-  - git config --global user.email "${GIT_EMAIL}"
+  - git config --local user.name "kamthamc"
+  - git config --local user.email "${GIT_EMAIL}"
+  - git remote set-url origin https://${GH_TOKEN}@github.com/kamthamc/resume.git
+  - git remote -v
   - GH_TOKEN=${GH_TOKEN} make release-ci
 
 branches:
