@@ -1,5 +1,5 @@
 {
-  "name": "resume",
+  "name": "@kamthamc/old-style-resume",
   "version": "0.1.0",
   "private": true,
   "homepage": "https://kamthamc.github.io/resume",
@@ -10,7 +10,8 @@
     "material-ui": "^0.20.0",
     "moment": "^2.22.1",
     "react": "^16.3.1",
-    "react-dom": "^16.7.0"
+    "react-dom": "^16.7.0",
+    "@kamthamc/resume-data": "0.1.0"
   },
   "devDependencies": {
     "gh-pages": "^2.0.1",
