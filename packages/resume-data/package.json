@@ -1,0 +1,12 @@
+{
+  "name": "@kamthamc/resume-data",
+  "version": "0.1.0",
+  "description": "Resume Data",
+  "main": "index.js",
+  "scripts": {
+    "test": "exit 0",
+    "build": "exit 0"
+  },
+  "author": "Chaitanya Kamatham",
+  "license": "MIT"
+}

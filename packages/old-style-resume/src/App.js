@@ -5,7 +5,7 @@ import darkBaseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
 import {ProfileComponent} from './Profile/ProfileComponent';
-import {ProfileData} from './Profile/Data/ProfileData';
+import { ProfileData } from '@kamthamc/resume-data';
 
 import './App.css';
 

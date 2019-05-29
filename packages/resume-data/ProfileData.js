@@ -8,7 +8,7 @@
 export const ProfileData = {
     title: 'Chaitanya Kumar Kamatham',
     subtitle: 'Software Engineer & UI Expert',
-    email: 'k.chaitanya_kumar@yahoo.com',
+    email: 'you@kchaitanya.com',
     phone: '(516) 637 - 6456',
     summary: [
         'Diversified skill set covering application and framework development. ',
@@ -119,8 +119,12 @@ export const ProfileData = {
             company: 'ShiftLeft',
             companyUrl: 'https://shiftleft.io',
             role: 'UI Engineer',
-            location: 'CA',
-            noteList: [],
+            location: 'Santa Clara, CA',
+            noteList: [
+              'Responsible for creating react web components with internationalization support',
+              'Responsible for creating end to end tests for the UI (using puppeteer) and micro-services (using python)',
+              'Involved in developing a NodeJS runtime agent'
+            ],
         },
         {
             begin: 1488355200000,

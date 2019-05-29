@@ -1,26 +1,19 @@
 language: node_js
 
 node_js:
-  - "8"
+  - "10"
 
 cache:
-    yarn: true
+    yarn: false
     directories:
         - node_modules
 
 install:
-    yarn install
-
-env:
-    REPO: https://${GIT_TOKEN}@github.com/kamthamc/resume.git
+    npm install
 
 script:
-    git config --global user.email ${GIT_EMAIL} &&
-    yarn run build &&
-    yarn run deploy
+    make release-ci
 
 branches:
     only:
         - master
-        - develop
-        - /^greenkeeper/.*$/
