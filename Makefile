@@ -2,6 +2,10 @@
 
 bootstrap:
 	npx lerna bootstrap
+	git --version
+	git config --global --list
+	git remote -v
+	git status
 
 build:
 	npx lerna run build
