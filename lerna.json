@@ -16,8 +16,8 @@
       "githubRelease": true,
       "forcePublish": true,
       "noGitReset": true,
-      "signGitCommit": false,
-      "signGitTag": false
+      "signGitCommit": true,
+      "signGitTag": true
     }
   },
   "ignoreChanges": [
