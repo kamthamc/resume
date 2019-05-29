@@ -9,7 +9,8 @@ cache:
         - node_modules
 
 before_install:
-  - echo -e "machine github.com\n  login $GITHUB_TOKEN" > ~/.netrc
+  - git config --local user.name "Travis CI"
+  - git config --local user.email "kamthamc@users.noreply.github.com"
 
 install:
     npm install
