@@ -7,7 +7,7 @@
 
 export const ProfileData = {
     title: 'Chaitanya Kumar Kamatham',
-    subtitle: 'Software Engineer & UI Expert',
+    subtitle: 'I build things',
     email: 'you@kchaitanya.com',
     phone: '(516) 637 - 6456',
     summary: [
