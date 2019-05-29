@@ -16,7 +16,7 @@ release: clean-ci bootstrap build
 	npx lerna version
 
 release-ci: clean-ci bootstrap build
-	npx lerna version --yes
+	get fetch --tags && git checkout master && npx lerna version --yes
 
 lint:
 	npx lerna run lint
