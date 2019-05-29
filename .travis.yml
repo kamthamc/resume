@@ -12,8 +12,8 @@ install:
   npm install
 
 script:
-  - git config --local user.name "kamthamc"
-  - git config --local user.email "${GIT_EMAIL}"
+  - git config --global user.name "kamthamc"
+  - git config --global user.email "${GIT_EMAIL}"
   - GH_TOKEN=${GH_TOKEN} make release-ci
 
 branches:
