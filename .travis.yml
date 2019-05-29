@@ -4,7 +4,7 @@ node_js:
   - "10"
 
 cache:
-    yarn: true
+    yarn: false
     directories:
         - node_modules
 
@@ -17,5 +17,3 @@ script:
 branches:
     only:
         - master
-        - develop
-        - /^greenkeeper/.*$/
