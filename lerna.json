@@ -5,7 +5,7 @@
   "version": "0.2.2",
   "command": {
     "create": {
-      "homepage": "https://github.com/lerna/lerna",
+      "homepage": "https://github.com/kamthamc/resume",
       "license": "MIT"
     },
     "version": {
