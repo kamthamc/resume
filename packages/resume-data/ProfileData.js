@@ -8,7 +8,7 @@
 export const ProfileData = {
   title: 'Chaitanya Kumar Kamatham',
   subtitle: 'I build things',
-  email: 'you@kchaitanya.com',
+  email: 'jobs@kchaitanya.com',
   phone: '(516) 637 - 6456',
   summary: [
     'Diversified skill set covering application and framework development. ',
