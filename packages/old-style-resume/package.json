@@ -1,10 +1,10 @@
 {
   "name": "@kamthamc/old-style-resume",
-  "version": "0.3.0",
+  "version": "0.3.4",
   "private": true,
   "homepage": "https://kamthamc.github.io/resume",
   "dependencies": {
-    "@kamthamc/resume-data": "0.3.0",
+    "@kamthamc/resume-data": "0.3.4",
     "d3": "^5.0.0",
     "font-awesome": "^4.7.0",
     "material-design-icons": "^3.0.1",
@@ -15,8 +15,11 @@
   },
   "devDependencies": {
     "gh-pages": "^2.0.1",
+    "husky": "^2.3.0",
     "node-sass": "^4.9.0",
     "npm-run-all": "^4.0.2",
+    "prettier": "^1.17.1",
+    "pretty-quick": "^1.11.0",
     "react-scripts": "^3.0.1",
     "sw-precache": "^5.2.1"
   },
@@ -29,6 +32,11 @@
     "build-css": "node-sass ./src/ -o ./src/",
     "watch-css": "npm run build-css && node-sass src/ -o src/ --watch --recursive",
     "deploy": "gh-pages -d build -r $REPO"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   },
   "browserslist": {
     "production": [
