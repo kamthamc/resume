@@ -15,8 +15,11 @@
   },
   "devDependencies": {
     "gh-pages": "^2.0.1",
+    "husky": "^2.3.0",
     "node-sass": "^4.9.0",
     "npm-run-all": "^4.0.2",
+    "prettier": "^1.17.1",
+    "pretty-quick": "^1.11.0",
     "react-scripts": "^3.0.1",
     "sw-precache": "^5.2.1"
   },
@@ -30,16 +33,9 @@
     "watch-css": "npm run build-css && node-sass src/ -o src/ --watch --recursive",
     "deploy": "gh-pages -d build -r $REPO"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   }
 }

@@ -8,12 +8,7 @@
 import React, { Component } from 'react';
 
 export class FrameworkComponent extends Component {
-
-    render() {
-        return (
-            <div className="framework">
-                {this.props.framework.name}
-            </div>
-        );
-    }
+  render() {
+    return <div className="framework">{this.props.framework.name}</div>;
+  }
 }
