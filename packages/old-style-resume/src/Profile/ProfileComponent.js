@@ -14,7 +14,6 @@ import { ExperienceListComponent } from './Experience/ExperienceListComponent';
 import { Skills } from './Skills/Skills';
 import './ProfileComponent.css';
 import PDFResume from '@kamthamc/resume-data/Resume.pdf';
-import profilePic from '../../public/Assets/ProfilePic.png';
 
 export class ProfileComponent extends PureComponent {
   render() {
@@ -28,7 +27,8 @@ export class ProfileComponent extends PureComponent {
       experienceList,
       educationList,
       frameworkList,
-      languageList
+      languageList,
+      profilePic
     } = this.props.profile;
     return (
       <div className="ProfileContainer">

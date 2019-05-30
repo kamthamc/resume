@@ -1,16 +1,16 @@
 {
-	"name": "kamthamc-resume",
-	"private": true,
-	"devDependencies": {
-		"lerna": "^3.14.1"
-	},
-	"dependencies": {},
-	"scripts": {
-    "prebuild": "lerna bootstrap",
-		"build": "lerna run build",
+  "name": "kamthamc-resume",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^3.14.1"
+  },
+  "dependencies": {},
+  "scripts": {
+    "prebuild": "lerna clean --yes && lerna bootstrap --ci",
+    "build": "lerna run build",
     "predeploy": "lerna bootstrap",
-		"deploy": "lerna run deploy",
+    "deploy": "lerna run deploy",
     "prerelease": "lerna bootstrap",
-		"release": "lerna run release"
-	}
+    "release": "lerna run release"
+  }
 }
