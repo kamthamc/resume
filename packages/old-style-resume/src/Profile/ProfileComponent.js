@@ -13,6 +13,7 @@ import EducationListComponent from './Education/EducationListComponent';
 import { ExperienceListComponent } from './Experience/ExperienceListComponent';
 import { Skills } from './Skills/Skills';
 import './ProfileComponent.css';
+import PDFResume from '@kamthamc/resume-data/Resume.pdf';
 
 
 export class ProfileComponent extends PureComponent {
@@ -73,7 +74,7 @@ export class ProfileComponent extends PureComponent {
                         <p>{description}</p>
                         <div id="about-btn" className="actions">
                             <div className="about-btn">
-                                <a href="./resume.pdf" className="btn waves-effect">Download CV</a>
+                                <a href={PDFResume} download='Resume.pdf' className="btn waves-effect">Download CV</a>
                                 <a href={`mailto:'chaitanya Kamatham'<${email}>`} className="btn waves-effect">Contact Me</a>
                             </div>
                         </div>

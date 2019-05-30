@@ -1,6 +1,6 @@
 {
   "name": "@kamthamc/resume-data",
-  "version": "0.2.3",
+  "version": "0.3.0",
   "description": "Resume Data",
   "main": "index.js",
   "homepage": "https://github.com/kamthamc/resume/tree/master/packages/scroller-profile#readme",
