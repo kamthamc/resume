@@ -2,7 +2,7 @@
   "packages": [
     "packages/*"
   ],
-  "version": "0.3.4",
+  "version": "0.3.5",
   "command": {
     "create": {
       "homepage": "https://github.com/kamthamc/resume",
@@ -13,11 +13,11 @@
       "conventionalCommits": true,
       "exact": true,
       "message": "chore(release): publish %s [ci skip]",
-      "githubRelease": true,
       "forcePublish": true,
       "noGitReset": true,
       "signGitCommit": false,
-      "signGitTag": false
+      "signGitTag": false,
+      "createRelease": "github"
     }
   },
   "ignoreChanges": [
