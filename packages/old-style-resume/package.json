@@ -1,7 +1,6 @@
 {
   "name": "@kamthamc/old-style-resume",
   "version": "0.3.13",
-  "private": true,
   "homepage": "https://kamthamc.github.io/resume",
   "dependencies": {
     "@kamthamc/resume-data": "0.3.13",

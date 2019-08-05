@@ -8,6 +8,5 @@
     "build": "exit 0"
   },
   "author": "Chaitanya Kamatham",
-  "license": "MIT",
-  "private": true
+  "license": "MIT"
 }
