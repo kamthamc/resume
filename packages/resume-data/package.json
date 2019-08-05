@@ -1,6 +1,6 @@
 {
   "name": "@kamthamc/resume-data",
-  "version": "0.3.14",
+  "version": "0.3.15",
   "description": "Resume Data",
   "main": "index.js",
   "scripts": {
