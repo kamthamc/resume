@@ -8,5 +8,10 @@
     "build": "exit 0"
   },
   "author": "Chaitanya Kamatham",
-  "license": "MIT"
+  "license": "MIT",
+  "gitHead": "7f68661bce3156c6598276bb8ed2bec77e0bdbcf",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/kamthamc/resume.git"
+  }
 }
