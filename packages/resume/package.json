@@ -1,0 +1,71 @@
+{
+  "name": "@kamthamc/resume",
+  "version": "0.3.17",
+  "description": "New Resume",
+  "keywords": [
+    "resume"
+  ],
+  "author": "Chaitanya Kumar Kamatham <kamthamc@users.noreply.github.com>",
+  "homepage": "https://github.com/kamthamc/resume/tree/master/packages/resume#readme",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "directories": {},
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamthamc/resume.git"
+  },
+  "scripts": {
+    "build": "webpack -p --mode production",
+    "start": "PORT=8082 webpack-dev-server"
+  },
+  "bugs": {
+    "url": "https://github.com/kamthamc/resume/issues"
+  },
+  "dependencies": {
+    "core-js": "^3.1.4",
+    "immer": "^3.2.0",
+    "moment": "^2.24.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-intl-universal": "^2.1.3",
+    "react-redux": "^7.1.0",
+    "react-router": "^5.0.1",
+    "react-router-dom": "^5.0.1",
+    "redux": "^4.0.4",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-saga": "^1.0.5",
+    "reselect": "^4.0.0",
+    "styled-components": "^4.3.2",
+    "typeface-roboto": "0.0.75",
+    "@kamthamc/resume-data": "0.3.17"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "@types/react": "^16.8.24",
+    "@types/react-dom": "^16.8.5",
+    "@types/react-redux": "^7.1.1",
+    "@types/react-router-dom": "^4.3.4",
+    "@types/styled-components": "^4.1.18",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.2.0",
+    "file-loader": "^4.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "html-webpack-template": "^6.2.0",
+    "husky": "^3.0.2",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^1.18.2",
+    "pretty-quick": "^1.11.1",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.3",
+    "url-loader": "^2.1.0",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
+  }
+}
