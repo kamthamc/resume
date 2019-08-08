@@ -5,13 +5,19 @@
   "main": "index.js",
   "scripts": {
     "test": "exit 0",
-    "build": "exit 0"
+    "build": "tsc"
   },
+  "files": [
+    "dist/index.js"
+  ],
   "author": "Chaitanya Kamatham",
   "license": "MIT",
   "gitHead": "7f68661bce3156c6598276bb8ed2bec77e0bdbcf",
   "repository": {
     "type": "git",
     "url": "ssh://git@github.com/kamthamc/resume.git"
+  },
+  "devDependencies": {
+    "typescript": "^3.5.3"
   }
 }
