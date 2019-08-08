@@ -1,0 +1,23 @@
+on:
+  push:
+    branches:
+      - master
+
+name: Publish
+jobs:
+  release:
+    name: PR Merges
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Check Skip CI commits
+        uses: veggiemonk/skip-commit@master
+        env:
+          COMMIT_FILTER: chore(release)
+      - name: Release
+        uses: actions/npm@master
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          entrypoint: make
+          args: release-ci
