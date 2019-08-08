@@ -20,7 +20,7 @@ release: clean-ci bootstrap build
 	npx lerna version
 
 release-ci: clean-ci bootstrap
-	git fetch --tags && git checkout master && npx lerna version --yes
+	git fetch --tags && git checkout master && npx lerna publish --yes --registry=https://npm.pkg.github.com
 
 lint:
 	npx lerna run lint
