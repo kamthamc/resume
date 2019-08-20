@@ -7,10 +7,8 @@ git-config:
 	git config --global user.email "kamthamc@users.noreply.github.com"
 	git config --global user.name "Chaitanya K"
 	git remote rm origin
-	git remote add origin "https://kamthamc:${GITHUB_TOKEN}@github.com/kamthamc/resume"
+	git remote add origin "https://kamthamc:${GITHUB_TOKEN}@github.com/kamthamc/resume.git"
 	git remote -v
-	ssh -T -p 443 git@ssh.github.com
-	ssh -T git@github.com
 
 build:
 	npx lerna run build
