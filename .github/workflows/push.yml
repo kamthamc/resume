@@ -9,11 +9,10 @@ jobs:
     name: PR Merges
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@master
       - name: Release
         if: endsWith(github.event.head_commit.message, '[ci skip]') == false
         uses: actions/npm@master
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-        with:
-          entrypoint: make
-          args: release-ci
+        run: make release-ci
