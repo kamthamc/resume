@@ -14,8 +14,6 @@ jobs:
         uses: veggiemonk/skip-commit@master
         env:
           COMMIT_FILTER: chore(release)
-      - run: git config --global user.email "kamthamc@users.noreply.github.com"
-      - run: git config --global user.name "Chaitanya K"
       - name: Release
         uses: actions/npm@master
         env:

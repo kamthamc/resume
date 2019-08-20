@@ -7,6 +7,10 @@ bootstrap:
 	git remote -v
 	git status
 
+git-config:
+	git config --global user.email "kamthamc@users.noreply.github.com"
+	git config --global user.name "Chaitanya K"
+
 build:
 	npx lerna run build
 
@@ -19,7 +23,7 @@ clean-ci:
 release: clean-ci bootstrap build
 	npx lerna version
 
-release-ci: clean-ci bootstrap
+release-ci: clean-ci bootstrap git-config
 	git fetch --tags && git checkout master && npx lerna publish --yes --registry=https://npm.pkg.github.com
 
 lint:
