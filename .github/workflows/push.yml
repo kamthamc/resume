@@ -15,4 +15,6 @@ jobs:
         uses: actions/npm@master
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: make release-ci
+        with:
+          entrypoint: make
+          args: release-ci
