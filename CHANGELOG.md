@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.2](https://github.com/kamthamc/resume/compare/v0.6.1...v0.6.2) (2019-08-20)
+
+### Bug Fixes
+
+- update build script ([3e88ecc](https://github.com/kamthamc/resume/commit/3e88ecc))
+- update build script ([7e7d82f](https://github.com/kamthamc/resume/commit/7e7d82f))
+
 ## [0.6.1](https://github.com/kamthamc/resume/compare/v0.6.0...v0.6.1) (2019-08-20)
 
 ### Bug Fixes
