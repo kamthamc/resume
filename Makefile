@@ -10,6 +10,9 @@ git-config:
 	git remote add origin "https://kamthamc:${GH_TOKEN}@github.com/kamthamc/resume.git"
 	git remote -v
 
+npm-config:
+	echo "//npm.pkg.github.com/:_authToken=${GH_TOKEN}" > .npmrc
+
 build:
 	npx lerna run build
 
@@ -22,7 +25,7 @@ clean-ci:
 release: clean-ci bootstrap build
 	npx lerna version
 
-release-ci: clean-ci bootstrap git-config
+release-ci: clean-ci bootstrap git-config npm-config
 	git fetch --tags && git checkout master && npx lerna publish --loglevel verbose --yes --registry=https://npm.pkg.github.com
 
 lint:
