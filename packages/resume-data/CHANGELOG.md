@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.5](https://github.com/kamthamc/resume/compare/v0.6.4...v0.6.5) (2019-11-19)
+
+**Note:** Version bump only for package @kamthamc/resume-data
+
 ## [0.6.4](https://github.com/kamthamc/resume/compare/v0.6.3...v0.6.4) (2019-11-19)
 
 **Note:** Version bump only for package @kamthamc/resume-data
