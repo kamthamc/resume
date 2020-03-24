@@ -17,8 +17,8 @@ steps:
 
 - task: ArchiveFiles@2
   inputs:
-    rootFolderOrFile: '*.sarif'
-    includeRootFolder: true
+    rootFolderOrFile: 'Comprehensive.sarif'
+    includeRootFolder: false
     archiveType: 'zip'
     archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
     replaceExistingArchive: true
