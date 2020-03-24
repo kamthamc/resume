@@ -10,18 +10,13 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- task: NodeTool@0
-  inputs:
-    versionSpec: '12.x'
-  displayName: 'Install Node.js'
-
 - script: |
     curl -q https://raw.githubusercontent.com/microsoft/sarif-vscode-extension/master/samples/Comprehensive.sarif > 'Comprehensive.sarif'
   displayName: 'Download Sarif'
 
 - task: CopyFiles@2
   inputs:
-    contents: '_buildOutput/**'
+    contents: '**'
     targetFolder: $(Build.ArtifactStagingDirectory)
 - task: PublishBuildArtifacts@1
   inputs:
