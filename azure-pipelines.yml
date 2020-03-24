@@ -16,11 +16,16 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
-    curl -q https://raw.githubusercontent.com/microsoft/sarif-vscode-extension/master/samples/Comprehensive.sarif > '$(Build.ArtifactStagingDirectory)/Comprehensive.sarif'
+    curl -q https://raw.githubusercontent.com/microsoft/sarif-vscode-extension/master/samples/Comprehensive.sarif > '_buildOutput/Comprehensive.sarif'
   displayName: 'Download Sarif'
+
+- task: CopyFiles@2
+  inputs:
+    contents: '_buildOutput/**'
+    targetFolder: $(Build.ArtifactStagingDirectory)
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)/Comprehensive.sarif'
-    ArtifactName: 'Sarif Files'
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'Sarif'
     publishLocation: 'Container'
 
