@@ -16,11 +16,11 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    contents: '**'
+    contents: '*.sarif'
     targetFolder: $(Build.ArtifactStagingDirectory)
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'Sarif'
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)/Comprehensive.sarif'
+    ArtifactName: 'Comprehensive.sarif'
     publishLocation: 'Container'
 
