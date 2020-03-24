@@ -1,4 +1,5 @@
 # Node.js with React
+
 # Build a Node.js project that uses React.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
@@ -14,13 +15,16 @@ steps:
     curl -q https://raw.githubusercontent.com/microsoft/sarif-vscode-extension/master/samples/Comprehensive.sarif > 'Comprehensive.sarif'
   displayName: 'Download Sarif'
 
-- task: CopyFiles@2
+- task: ArchiveFiles@2
   inputs:
-    contents: '*.sarif'
-    targetFolder: $(Build.ArtifactStagingDirectory)
+    rootFolderOrFile: '*.sarif'
+    includeRootFolder: true
+    archiveType: 'zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    replaceExistingArchive: true
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)/Comprehensive.sarif'
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
     ArtifactName: 'Comprehensive.sarif'
     publishLocation: 'Container'
 
