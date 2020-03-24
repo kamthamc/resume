@@ -14,17 +14,8 @@ steps:
 - script: |
     curl -q https://raw.githubusercontent.com/microsoft/sarif-vscode-extension/master/samples/Comprehensive.sarif > 'Comprehensive.sarif'
   displayName: 'Download Sarif'
-
-- task: ArchiveFiles@2
-  inputs:
-    rootFolderOrFile: 'Comprehensive.sarif'
-    includeRootFolder: false
-    archiveType: 'zip'
-    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
-    replaceExistingArchive: true
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
-    ArtifactName: 'Comprehensive.sarif'
-    publishLocation: 'Container'
+    PathtoPublish: 'Comprehensive.sarif'
+    ArtifactName: 'Sarif'
 
