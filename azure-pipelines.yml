@@ -20,10 +20,4 @@ steps:
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: 'sarif'
-    ArtifactName: 'ShiftLeftAppThreat'
-
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: 'sarif'
     ArtifactName: 'CodeAnalysisLogs'
-
