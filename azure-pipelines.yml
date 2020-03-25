@@ -15,6 +15,7 @@ steps:
     mkdir sarif
     curl -q https://raw.githubusercontent.com/microsoft/sarif-vscode-extension/master/samples/Comprehensive.sarif > 'sarif/Comprehensive.sarif'
     curl -q https://raw.githubusercontent.com/microsoft/sarif-vscode-extension/master/samples/TSLint.sarif > 'sarif/TSLint.sarif'
+    curl -q https://gist.githubusercontent.com/kamthamc/fe4a682877e8292d79b63bb37d5c9b32/raw/efa5013de1c3f363c55025330f1f6b6ace95dddb/findsec-bugs.html > sarif/findsec-bugs.html
   displayName: 'Download Sarif'
 - task: PublishBuildArtifacts@1
   inputs:
