@@ -17,5 +17,5 @@ steps:
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: 'Comprehensive.sarif'
-    ArtifactName: 'CodeAnalysisLogs'
+    ArtifactName: 'ShiftLeftAppThreat'
 
