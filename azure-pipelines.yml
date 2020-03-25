@@ -13,9 +13,15 @@ pool:
 steps:
 - script: |
     curl -q https://raw.githubusercontent.com/microsoft/sarif-vscode-extension/master/samples/Comprehensive.sarif > 'Comprehensive.sarif'
+    curl -q https://raw.githubusercontent.com/microsoft/sarif-vscode-extension/master/samples/TSLint.sarif > 'TSLint.sarif'
   displayName: 'Download Sarif'
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: 'Comprehensive.sarif'
+    PathtoPublish: '*.sarif'
     ArtifactName: 'ShiftLeftAppThreat'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '*.sarif'
+    ArtifactName: 'CodeAnalysisLogs'
 
