@@ -13,6 +13,6 @@
     "release": "lerna run release",
     "lerna": "lerna",
     "clean": "lerna clean --yes",
-    "publish": "lerna publish --loglevel verbose --yes --registry=https://npm.pkg.github.com"
+    "publish": "lerna publish --loglevel verbose --yes --registry=https://npm.pkg.github.com/kamthamc"
   }
 }
