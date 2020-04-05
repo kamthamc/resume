@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.6.8 (2020-04-05)
+
+### Bug Fixes
+
+- update npmrc ([e4d96b1](https://github.com/kamthamc/resume/commit/e4d96b1d6c31199a60b2e9400b62fb0064206342))
+
 ## 0.6.7 (2020-04-05)
 
 ### Bug Fixes
