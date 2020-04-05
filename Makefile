@@ -4,7 +4,7 @@ npm-install:
 	npm install
 
 bootstrap:
-	npx lerna bootstrap
+	npx lerna bootstrap --ci
 
 git-config:
 	git config --global user.email "kamthamc@users.noreply.github.com"
@@ -21,15 +21,15 @@ build:
 	npm run lerna run build
 
 clean:
-	npm run lerna clean
+	npm run clean
 
 clean-ci:
-	npm run lerna clean --yes
+	npm run clean
 
 release: clean-ci bootstrap build
 	npm run lerna version
 
-release-ci: npm-install git-config npm-config clean-ci bootstrap
+release-ci: git-config npm-install npm-config clean-ci bootstrap
 	git fetch --tags && git checkout master && npm run lerna publish --loglevel verbose --yes --registry=https://npm.pkg.github.com
 
 lint:

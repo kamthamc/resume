@@ -11,6 +11,7 @@
     "deploy": "lerna run deploy",
     "prerelease": "lerna bootstrap",
     "release": "lerna run release",
-    "lerna": "lerna"
+    "lerna": "lerna",
+    "clean": "lerna clean --yes"
   }
 }
