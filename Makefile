@@ -16,7 +16,6 @@ git-config:
 npm-config:
 	echo "registry=https://npm.pkg.github.com/kamthamc" > .npmrc
 	npm run lerna exec -- "echo \"//npm.pkg.github.com/:_authToken=${GH_TOKEN}\" > .npmrc"
-	npm run lerna exec -- "cat .npmrc"
 
 build:
 	npm run lerna run build
@@ -31,7 +30,7 @@ release: clean-ci bootstrap build
 	npm run lerna version
 
 release-ci: git-config npm-install npm-config clean-ci bootstrap
-	git fetch --tags && git checkout master && npm run lerna publish --loglevel verbose --yes --registry=https://npm.pkg.github.com
+	git fetch --tags && git checkout master && npm run publish
 
 lint:
 	npm run lerna run lint
