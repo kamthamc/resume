@@ -10,12 +10,12 @@ git-config:
 	git config --global user.email "kamthamc@users.noreply.github.com"
 	git config --global user.name "Chaitanya K"
 	git remote rm origin
-	git remote add origin "https://kamthamc:${GH_TOKEN}@github.com/kamthamc/resume.git"
+	git remote add origin "https://kamthamc:${GITHUB_TOKEN}@github.com/kamthamc/resume.git"
 	git remote -v
 
 npm-config:
 	echo "registry=https://npm.pkg.github.com/kamthamc" > .npmrc
-	npm run lerna exec -- "echo \"//npm.pkg.github.com/:_authToken=${GH_TOKEN}\" > .npmrc"
+	npm run lerna exec -- "echo \"//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}\" > .npmrc"
 	npm run lerna exec -- "cat .npmrc"
 
 build:
