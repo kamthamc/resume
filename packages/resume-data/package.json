@@ -18,6 +18,7 @@
     "url": "ssh://git@github.com/kamthamc/resume.git"
   },
   "devDependencies": {
-    "typescript": "^3.7.4"
-  }
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {}
 }

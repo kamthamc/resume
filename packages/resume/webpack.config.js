@@ -6,55 +6,43 @@ const config = {
   entry: './src/index.tsx',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].[contenthash].js'
+    filename: '[name].[contenthash].js',
   },
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     compress: true,
-    port: process.env.PORT || 8080
+    port: process.env.PORT || 8080,
   },
   module: {
     rules: [
       {
         test: /\.(png|woff(2)?|ttf|eot|svg)$/,
-        use: ['file-loader']
+        use: ['file-loader'],
       },
       {
         test: /\.(js|jsx)$/,
         use: 'babel-loader',
-        exclude: /node_modules/
+        exclude: /node_modules/,
       },
       {
         test: /\.(ts|tsx)?$/,
         loader: 'ts-loader',
-        exclude: /node_modules/
+        exclude: /node_modules/,
       },
       {
         test: /\.css$/,
-        use: 'css-loader'
-      }
-    ]
+        use: 'css-loader',
+      },
+    ],
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.tsx', '.ts']
+    extensions: ['.js', '.jsx', '.tsx', '.ts'],
   },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      template: require('html-webpack-template'),
-      inject: false,
-      appMountId: 'app',
-      lang: 'en-us',
-      title: 'Chaitanya K',
-      meta: [
-        {
-          name: 'viewport',
-          width: 'device-width',
-          'initial-scale': 1,
-          'user-scalable': 'no'
-        }
-      ]
-    })
+      template: 'src/index.html',
+    }),
   ],
   optimization: {
     runtimeChunk: 'single',
@@ -63,11 +51,11 @@ const config = {
         vendor: {
           test: /[\\\/]node_modules[\\\/]/,
           name: 'vendors',
-          chunks: 'all'
-        }
-      }
-    }
-  }
+          chunks: 'all',
+        },
+      },
+    },
+  },
 };
 
 module.exports = config;
