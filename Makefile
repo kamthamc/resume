@@ -18,13 +18,13 @@ npm-config:
 	npm run lerna exec -- "echo \"//npm.pkg.github.com/:_authToken=${GH_TOKEN}\" > .npmrc"
 
 build:
-	npm run  lerna run build
+	npm run lerna run build
 
 clean:
-	npm run  lerna clean
+	npm run lerna clean
 
 clean-ci:
-	npm run  lerna clean --yes
+	npm run lerna clean --yes
 
 release: clean-ci bootstrap build
 	npm run lerna version
