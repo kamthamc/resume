@@ -3,7 +3,7 @@
   "version": "0.6.5",
   "homepage": "https://kamthamc.github.io/resume",
   "dependencies": {
-    "@kamthamc/resume-data": "file:../resume-data",
+    "@kamthamc/resume-data": "0.6.5",
     "d3": "^5.15.1",
     "font-awesome": "^4.7.0",
     "material-design-icons": "^3.0.1",

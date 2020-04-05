@@ -25,7 +25,7 @@
     "url": "https://github.com/kamthamc/resume/issues"
   },
   "dependencies": {
-    "@kamthamc/resume-data": "file:../resume-data",
+    "@kamthamc/resume-data": "0.6.5",
     "core-js": "^3.6.4",
     "immer": "^6.0.3",
     "moment": "^2.24.0",

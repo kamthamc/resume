@@ -6,7 +6,7 @@
   },
   "dependencies": {},
   "scripts": {
-    "prebuild": "lerna clean --yes && lerna bootstrap --ci",
+    "prebuild": "lerna clean --yes && lerna bootstrap --ci && lerna link",
     "build": "lerna run build",
     "predeploy": "lerna bootstrap",
     "deploy": "lerna run deploy",
