@@ -18,5 +18,6 @@ jobs:
       - name: Release
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         if: endsWith(github.event.head_commit.message, '[ci skip]') == false
         run: make release-ci
