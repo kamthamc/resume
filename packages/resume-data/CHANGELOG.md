@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.6.7 (2020-04-05)
+
+### Bug Fixes
+
+- publish command ([697c8ca](https://github.com/kamthamc/resume/commit/697c8ca38fb4d7628bf28c22aafae2be5dca35ac))
+
 ## 0.6.6 (2020-04-05)
 
 ### Bug Fixes
