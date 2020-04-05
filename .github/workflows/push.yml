@@ -10,11 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2.1.0
-      - name: Release
+      - name: Setup Node
         if: endsWith(github.event.head_commit.message, '[ci skip]') == false
         uses: actions/setup-node@v1.4.1
+        with:
+          node-version: '13.x'
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-        with:
-          entrypoint: make
-          args: release-ci
+      - run: make release-ci
