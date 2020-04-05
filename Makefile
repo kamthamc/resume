@@ -11,6 +11,7 @@ git-config:
 	git remote -v
 
 npm-config:
+	echo "registry=https://npm.pkg.github.com/kamthamc" > .npmrc
 	echo "//npm.pkg.github.com/:_authToken=${GH_TOKEN}" > .npmrc
 
 build:
