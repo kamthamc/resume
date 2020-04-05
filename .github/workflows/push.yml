@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v2.1.0
       - name: Release
         if: endsWith(github.event.head_commit.message, '[ci skip]') == false
-        uses: actions/setup-node@v1.1.0
+        uses: actions/setup-node@v1.4.1
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         with:
