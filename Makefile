@@ -1,4 +1,7 @@
-.PHONY: bootstrap build clean clean-ci lint lint-ci release release-ci test test-ci
+.PHONY: bootstrap build clean clean-ci lint lint-ci release release-ci test test-ci npm-install
+
+npm-install:
+	npm install
 
 bootstrap:
 	npx lerna bootstrap
@@ -12,31 +15,31 @@ git-config:
 
 npm-config:
 	echo "registry=https://npm.pkg.github.com/kamthamc" > .npmrc
-	echo "//npm.pkg.github.com/:_authToken=${GH_TOKEN}" > .npmrc
+	npm run lerna exec -- "echo \"//npm.pkg.github.com/:_authToken=${GH_TOKEN}\" > .npmrc"
 
 build:
-	npx lerna run build
+	npm run  lerna run build
 
 clean:
-	npx lerna clean
+	npm run  lerna clean
 
 clean-ci:
-	npx lerna clean --yes
+	npm run  lerna clean --yes
 
 release: clean-ci bootstrap build
-	npx lerna version
+	npm run lerna version
 
-release-ci: git-config npm-config clean-ci bootstrap
-	git fetch --tags && git checkout master && npx lerna publish --loglevel verbose --yes --registry=https://npm.pkg.github.com
+release-ci: npm-install git-config npm-config clean-ci bootstrap
+	git fetch --tags && git checkout master && npm run lerna publish --loglevel verbose --yes --registry=https://npm.pkg.github.com
 
 lint:
-	npx lerna run lint
+	npm run lerna run lint
 
 lint-ci:
-	npx lerna run lint --yes
+	npm run lerna run lint --yes
 
 test:
-	npx lerna run test
+	npm run lerna run test
 
 test-ci:
-	npx lerna run test --yes
+	npm run lerna run test --yes
