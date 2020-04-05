@@ -17,4 +17,6 @@ jobs:
           node-version: '13.x'
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-      - run: make release-ci
+      - name: Release
+        if: endsWith(github.event.head_commit.message, '[ci skip]') == false
+        run: make release-ci
