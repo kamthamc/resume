@@ -1,6 +1,6 @@
 {
   "name": "@kamthamc/resume",
-  "version": "0.6.5",
+  "version": "0.6.6",
   "description": "New Resume",
   "keywords": [
     "resume"
@@ -25,7 +25,7 @@
     "url": "https://github.com/kamthamc/resume/issues"
   },
   "dependencies": {
-    "@kamthamc/resume-data": "0.6.5",
+    "@kamthamc/resume-data": "0.6.6",
     "core-js": "^3.6.4",
     "immer": "^6.0.3",
     "moment": "^2.24.0",

@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.6.6 (2020-04-05)
+
+### Bug Fixes
+
+- publish command ([2af8e7d](https://github.com/kamthamc/resume/commit/2af8e7d82cc2e1eb6c7d9ac15e26112e73122395))
+
 ## [0.6.5](https://github.com/kamthamc/resume/compare/v0.6.4...v0.6.5) (2019-11-19)
 
 **Note:** Version bump only for package @kamthamc/resume-data

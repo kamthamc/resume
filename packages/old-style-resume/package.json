@@ -1,9 +1,9 @@
 {
   "name": "@kamthamc/old-style-resume",
-  "version": "0.6.5",
+  "version": "0.6.6",
   "homepage": "https://kamthamc.github.io/resume",
   "dependencies": {
-    "@kamthamc/resume-data": "0.6.5",
+    "@kamthamc/resume-data": "0.6.6",
     "d3": "^5.15.1",
     "font-awesome": "^4.7.0",
     "material-design-icons": "^3.0.1",

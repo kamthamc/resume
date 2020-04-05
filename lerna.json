@@ -1,6 +1,6 @@
 {
   "packages": ["packages/*"],
-  "version": "0.6.5",
+  "version": "0.6.6",
   "command": {
     "create": {
       "homepage": "https://github.com/kamthamc/resume",
