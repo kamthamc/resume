@@ -15,8 +15,8 @@ jobs:
         uses: actions/setup-node@v1.4.1
         with:
           node-version: '13.x'
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
       - name: Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         if: endsWith(github.event.head_commit.message, '[ci skip]') == false
         run: make release-ci
