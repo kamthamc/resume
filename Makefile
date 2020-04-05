@@ -16,7 +16,7 @@ git-config:
 npm-config:
 	echo "registry=https://npm.pkg.github.com/kamthamc" > .npmrc
 	echo "//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}" >> .npmrc
-	# npm run lerna exec -- "echo \"//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}\" > .npmrc"
+	npm run lerna exec -- "echo \"//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}\" > .npmrc"
 
 build:
 	npm run lerna run build
