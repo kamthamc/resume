@@ -16,6 +16,9 @@
       "signGitCommit": false,
       "signGitTag": false,
       "createRelease": "github"
+    },
+    "bootstrap": {
+      "registry": "https://npm.pkg.github.com/kamthamc"
     }
   },
   "ignoreChanges": ["**/__fixtures__/**", "**/__tests__/**", "**/*.md"]
