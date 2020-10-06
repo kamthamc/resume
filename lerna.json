@@ -1,6 +1,8 @@
 {
-  "packages": ["packages/*"],
-  "version": "0.6.8",
+  "packages": [
+    "packages/*"
+  ],
+  "version": "0.6.9",
   "command": {
     "create": {
       "homepage": "https://github.com/kamthamc/resume",
@@ -21,5 +23,9 @@
       "registry": "https://npm.pkg.github.com/kamthamc"
     }
   },
-  "ignoreChanges": ["**/__fixtures__/**", "**/__tests__/**", "**/*.md"]
+  "ignoreChanges": [
+    "**/__fixtures__/**",
+    "**/__tests__/**",
+    "**/*.md"
+  ]
 }
