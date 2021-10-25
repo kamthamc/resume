@@ -5,17 +5,26 @@ node_modules
 /coverage
 
 # production
-/build
+**/build/*
 
 # misc
 .DS_Store
 .env
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-lerna-debug.log*
+*.log*
 
 # css
 src/**/*.css
 
 .idea
+
+
+.yarn/*[!@batchx-grpc-web-api]*
+!.yarn/cache/*
+.yarn/cache/*.zip
+.yarn/unplugged
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*

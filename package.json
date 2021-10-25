@@ -1,18 +1,12 @@
 {
   "name": "kamthamc-resume",
   "private": true,
-  "devDependencies": {
-    "lerna": "^3.20.2"
-  },
-  "dependencies": {},
-  "scripts": {
-    "build": "lerna run build",
-    "predeploy": "lerna bootstrap",
-    "deploy": "lerna run deploy",
-    "prerelease": "lerna bootstrap",
-    "release": "lerna run release",
-    "lerna": "lerna",
-    "clean": "lerna clean --yes",
-    "publish": "lerna publish --loglevel verbose --yes --registry=https://npm.pkg.github.com/kamthamc"
+  "scripts": {},
+  "workspaces": [
+    "packages/*"
+  ],
+  "packageManager": "yarn@3.0.2",
+  "dependencies": {
+    "tailwindcss": "^2.2.17"
   }
 }
