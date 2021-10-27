@@ -8,8 +8,8 @@
 export const ProfileData = {
   title: 'Chaitanya Kumar Kamatham',
   subtitle: 'I build things',
-  email: 'jobs@kchaitanya.com',
-  phone: '(516) 637 - 6456',
+  email: 'hverpuu@kchaitanya.com',
+  phone: '516-637-6456',
   summary: [
     'Diversified skill set covering application and framework development. ',
     'Hands-on Involvement in both Front-end and Back-end development. ',
@@ -17,9 +17,9 @@ export const ProfileData = {
     'Quick learner and can easily adopt new languages and technologies.'
   ],
   description:
-    'Hi I’m Chaitanya. Front End Engineer from 2008. ' +
+    'Hi I’m Chaitanya. Front End Engineer.' +
     'Experienced with all stages of the development cycle for dynamic web applications. Having an in-depth knowledge including advanced HTML5, ' +
-    'CSS3, SASS, Java, ES6, Typescript, React, Angular. Contributed to open source projects.',
+    'CSS3, SASS, Java, ES6, Typescript, React. Contributed to open source projects.',
   profilePic: 'Assets/ProfilePic.png',
   social: [
     {
@@ -63,24 +63,12 @@ export const ProfileData = {
   ],
   languageList: [
     {
-      name: 'PHP',
-      rating: 6
-    },
-    {
       name: 'CSS',
-      rating: 7
+      rating: 8
     },
     {
       name: 'Typescript',
       rating: 8
-    },
-    {
-      name: 'Swift',
-      rating: 4
-    },
-    {
-      name: 'Java',
-      rating: 6
     },
     {
       name: 'HTML',
@@ -89,7 +77,15 @@ export const ProfileData = {
     {
       name: 'Javascript',
       rating: 8
-    }
+    },
+    {
+      name: 'Java',
+      rating: 6
+    },
+    {
+      name: 'SQL',
+      rating: 6
+    },
   ],
   frameworkList: [
     {
@@ -97,22 +93,36 @@ export const ProfileData = {
       rating: 9
     },
     {
-      name: 'Angular 7',
-      rating: 6
-    },
-    {
       name: 'Redux',
       rating: 8
     }
   ],
-  skillList: [
-    {
-      name: 'java'
-    }
-  ],
-  experienceList: [
+  skillList: [],
+  experienceList: [{
+    begin: 1628924400000,
+    company: 'Microsoft',
+    companyUrl: 'https://microsoft.com',
+    role: 'SDE II',
+    location: 'Sunnyvale, CA',
+    noteList: [
+      'Responsible for creating react web components with internationalization and accessibility support',
+      'Responsible for improving the page load and render performance',
+    ]
+  },{
+    begin: 1608019200000,
+    end: 1628924400000,
+    company: 'Cloudknox Inc Acquired by Microsoft',
+    companyUrl: 'https://cloudknox.io',
+    role: 'UI Engineer',
+    location: 'Sunnyvale, CA',
+    noteList: [
+      'Responsible for creating react web components with internationalization support',
+      'Responsible for creating end to end tests for the UI (using puppeteer) and micro-services (using python)',
+    ]
+  },
     {
       begin: 1498892400000,
+      end: 1601967600000,
       company: 'ShiftLeft',
       companyUrl: 'https://shiftleft.io',
       role: 'UI Engineer',
@@ -120,7 +130,11 @@ export const ProfileData = {
       noteList: [
         'Responsible for creating react web components with internationalization support',
         'Responsible for creating end to end tests for the UI (using puppeteer) and micro-services (using python)',
-        'Involved in developing a NodeJS runtime agent'
+        'Involved in developing a NodeJS runtime agent',
+        'Helped improve VS Code plugin',
+        'Created Azure Pipeline Plugin',
+        'Created Jenkins Plugin',
+        'Created Jira Plugin',
       ]
     },
     {
