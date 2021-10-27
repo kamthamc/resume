@@ -1,0 +1,32 @@
+@tailwind base;
+
+@layer base {
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
+  h3 {
+    @apply text-lg;
+  }
+  a {
+    @apply text-blue-600 underline;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    @apply bg-gray-800;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    @apply bg-white;
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
+@tailwind screens;
