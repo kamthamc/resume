@@ -1,194 +1,474 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Chaitanya Kumar Kamatham</title>
-
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <meta name="Description" content="Senior Software Engineer @Microsoft" />
-    <meta
-      name="keywords"
-      content="resume,Chaitanya Kumar Kamatham, Kamatham, Chaitanya"
-    />
-    <meta name="Author" content="Chaitanya Kumar Kamatham" />
-
-    <meta
-      property="og:description"
-      content="Senior Software Engineer @Microsoft"
-    />
-    <meta property="og:locale" content="en_IN" />
-    <meta property="og:locale:alternate" content="en_US" />
-    <meta property="profile:first_name" content="Chaitanya Kumar" />
-    <meta property="profile:last_name" content="Kamatham" />
-    <meta property="profile:username" content="kamthamc" />
-    <meta property="og:image:width" content="255" />
-    <meta property="og:image:height" content="255" />
-    <meta property="og:site_name" content="Chaitanya Kumar Kamatham" />
-
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
-
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {},
-            fontFamily: {
-              sans: ['Inter var'],
-            },
-          },
-        },
-      };
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Chaitanya Kumar Kamatham - Senior Software Engineer at Microsoft. Explore my surreal digital portfolio featuring projects, skills, and professional journey in software development.">
+    <meta name="keywords" content="Chaitanya Kamatham, Software Engineer, Microsoft, Full Stack Developer, React, Node.js, Python, Portfolio, Hyderabad">
+    <meta name="author" content="Chaitanya Kumar Kamatham">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Chaitanya's Surreal Mind - Software Engineer Portfolio">
+    <meta property="og:description" content="Senior Software Engineer at Microsoft. Explore my surreal digital portfolio featuring innovative projects and professional journey.">
+    <meta property="og:image" content="/avatar.png">
+    <meta property="og:url" content="https://kchaitanya.com">
+    <meta property="og:site_name" content="Chaitanya's Portfolio">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Chaitanya's Surreal Mind - Software Engineer Portfolio">
+    <meta name="twitter:description" content="Senior Software Engineer at Microsoft. Explore my surreal digital portfolio featuring innovative projects.">
+    <meta name="twitter:image" content="/avatar.png">
+    <meta name="twitter:creator" content="@chaitanyakamatham">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="application-name" content="Chaitanya's Portfolio">
+    <meta name="msapplication-TileColor" content="#1a1a2e">
+    <meta name="msapplication-config" content="/browserconfig.xml">
+    
+    <!-- Theme Colors -->
+    <meta name="theme-color" content="#1a1a2e" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#f8f9fa" media="(prefers-color-scheme: light)">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://kchaitanya.com">
+    
+    <!-- Web App Manifest for PWA features -->
+    <link rel="manifest" href="manifest.json">
+    
+    <title>Chaitanya's Surreal Mind</title>
+    
+    <!-- Critical resource preloads for performance -->
+    <link rel="preload" href="style.css" as="style" fetchpriority="high">
+    <link rel="preload" href="avatar.webp" as="image" type="image/webp" fetchpriority="high" media="(min-width: 1px)">
+    <link rel="preload" href="avatar.png" as="image" fetchpriority="high">
+    
+    <!-- DNS prefetch and preconnect for external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.linkedin.com">
+    <link rel="dns-prefetch" href="https://github.com">
+    
+    <!-- Prefetch likely user interactions -->
+    <link rel="prefetch" href="https://www.linkedin.com/in/chaitanya-kamatham">
+    <link rel="prefetch" href="https://github.com/kamthamc">
+    
+    <!-- Critical CSS loaded with high priority -->
+    <link rel="stylesheet" href="style.css" fetchpriority="high">
+    
+    <!-- Critical CSS inline for faster LCP -->
+    <style>
+        /* Critical styles for first paint */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #0a0a0f;
+            color: #ffffff;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+        
+        .dreamscape {
+            height: 100vh;
+            overflow-y: scroll;
+            scroll-snap-type: y mandatory;
+        }
+        
+        .realm {
+            min-height: 100vh;
+            width: 100%;
+            scroll-snap-align: start;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 2rem;
+        }
+        
+        .entry-portal {
+            background: radial-gradient(circle at center, #1a1a2e 0%, #0a0a0f 70%);
+        }
+        
+        .portal-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 1200px;
+            position: relative;
+        }
+        
+        .title-main {
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+    </style>
+    
+    <!-- Font loading with display=swap for better performance -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Chaitanya Kumar Kamatham",
+      "jobTitle": "Senior Software Engineer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Microsoft"
+      },
+      "url": "https://kchaitanya.com",
+      "image": "https://kchaitanya.com/avatar.png",
+      "email": "jobs@kchaitanya.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Hyderabad",
+        "addressRegion": "Telangana",
+        "addressCountry": "IN"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/chaitanya-kamatham",
+        "https://github.com/kamthamc"
+      ],
+      "knowsAbout": [
+        "Software Engineering",
+        "Full Stack Development",
+        "React",
+        "Node.js",
+        "Python",
+        "JavaScript",
+        "TypeScript",
+        "Cloud Computing"
+      ],
+      "alumniOf": "Computer Science Engineering"
+    }
     </script>
-  </head>
-  <body
-    class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover"
-    style="background-image: url('https://source.unsplash.com/1L71sPT5XKc')"
-  >
-    <main
-      class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0"
-    >
-      <div
-        id="profile"
-        class="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 mx-6 lg:mx-0"
-      >
-        <div class="p-4 md:p-12 text-center lg:text-left">
-          <div
-            class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center"
-            style="
-              background-image: url('https://source.unsplash.com/ch1t9lku6Ok');
-            "
-          ></div>
+    
+    <!-- Service Worker Registration for Caching -->
+    <script>
+        // Optimized service worker registration
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/sw.js', { scope: '/' })
+                    .then(function(registration) {
+                        console.log('ServiceWorker registration successful');
+                        
+                        // Update on reload
+                        registration.addEventListener('updatefound', function() {
+                            const newWorker = registration.installing;
+                            newWorker.addEventListener('statechange', function() {
+                                if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                                    // New content is available, reload to get it
+                                    window.location.reload();
+                                }
+                            });
+                        });
+                    }, function(err) {
+                        console.log('ServiceWorker registration failed: ', err);
+                    });
+            });
+        }
+        
+        // Optimize page for performance
+        if ('requestIdleCallback' in window) {
+            requestIdleCallback(function() {
+                // Preload next likely page sections
+                const prefetchLinks = document.querySelectorAll('a[href^="http"]');
+                prefetchLinks.forEach(link => {
+                    if (link.hostname !== window.location.hostname) {
+                        const linkEl = document.createElement('link');
+                        linkEl.rel = 'dns-prefetch';
+                        linkEl.href = link.origin;
+                        document.head.appendChild(linkEl);
+                    }
+                });
+            });
+        }
+    </script>
+</head>
+<body>
+    <!-- Skip link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Background elements -->
+    <div class="starfield"></div>
+    <div class="cosmic-dust"></div>
+    
+    <!-- Main container with scroll snap -->
+    <main class="dreamscape" id="main-content" role="main">
+        
+        <!-- Section 1: Entry Portal - Hero/Introduction -->
+        <section class="realm entry-portal" id="entry" aria-labelledby="entry-title">
+            <header class="portal-container">
+                <div class="portal-frame">
+                    <div class="portal-inner">
+                        <div class="portal-energy" aria-hidden="true"></div>
+                        <div class="portal-center">
+                            <div class="profile-avatar">
+                                <picture>
+                                    <source srcset="avatar.webp" type="image/webp" width="280" height="280">
+                                    <img src="avatar.png" 
+                                         alt="Professional headshot of Chaitanya Kumar Kamatham, Senior Software Engineer at Microsoft" 
+                                         class="avatar-image"
+                                         fetchpriority="high"
+                                         width="280"
+                                         height="280"
+                                         decoding="async"
+                                         loading="eager">
+                                </picture>
+                                <div class="avatar-glow" aria-hidden="true"></div>
+                            </div>
+                            <h1 class="title-main" id="entry-title">Hello, I'm Chaitanya</h1>
+                            <p class="subtitle">Senior Software Engineer at Microsoft</p>
+                            <address class="location">📍 Hyderabad, India</address>
+                            <nav class="enter-prompt" aria-label="Site navigation">
+                                <span class="pulse-text">Explore my digital realm</span>
+                                <div class="scroll-indicator" aria-label="Scroll down to explore">↓</div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </section>
 
-          <h1 class="text-3xl font-bold pt-8 lg:pt-0">
-            Chaitanya Kumar Kamatham
-          </h1>
-          <div
-            class="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-blue-500 opacity-25"
-          ></div>
-          <p
-            class="pt-4 text-base font-bold flex items-center justify-center lg:justify-start"
-          >
-            <svg
-              class="h-4 fill-current text-blue-700 pr-4"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-            >
-              <path
-                d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"
-              />
-            </svg>
-            Software Engineer&nbsp;
-            <a class="link text-blue-900" href="https://microsoft.com"
-              >@Microsoft</a
-            >
-          </p>
-          <p class="pt-8 text-sm">
-            I am a software engineer with 10+ years of experience in building
-            applications. I have worked on a wide range of technologies and have
-            a passion for learning new things. I am currently working as a
-            Senior Software Engineer at Microsoft.
-          </p>
+        <!-- Section 2: Failure Garden - Professional Growth -->
+        <section class="realm failure-garden" id="garden" aria-labelledby="garden-title">
+            <article class="garden-container">
+                <header>
+                    <h2 class="realm-title" id="garden-title">Failure Garden</h2>
+                    <p class="realm-description">Where setbacks bloom into wisdom and professional growth</p>
+                </header>
+                
+                <div class="flower-field" role="group" aria-label="Professional challenges and learnings">
+                    <!-- Learning Experience 1 -->
+                    <div class="flower-group">
+                        <input type="checkbox" id="flower1" class="flower-checkbox">
+                        <label for="flower1" class="flower" aria-label="Early career optimization challenge" role="button" tabindex="0">
+                            <div class="flower-stem" aria-hidden="true"></div>
+                            <div class="flower-bloom pink" aria-hidden="true">
+                                <div class="petal"></div>
+                                <div class="petal"></div>
+                                <div class="petal"></div>
+                                <div class="petal"></div>
+                                <div class="petal"></div>
+                            </div>
+                        </label>
+                        <aside class="flower-wisdom" role="tooltip">
+                            <h3>Early Career Performance Optimization</h3>
+                            <p>First major system performance challenge taught me that premature optimization can be the root of evil, but understanding bottlenecks is essential for scalable software engineering.</p>
+                        </aside>
+                    </div>
 
-          <div class="pt-12 pb-8">
-            <a
-              class="bg-blue-700 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded-full"
-              href="mailto:hverpuu@kchaitanya.com"
-              >Get in Touch</a
-            >
-          </div>
+                    <!-- Learning Experience 2 -->
+                    <div class="flower-group">
+                        <input type="checkbox" id="flower2" class="flower-checkbox">
+                        <label for="flower2" class="flower" aria-label="Team collaboration learning experience" role="button" tabindex="0">
+                            <div class="flower-stem" aria-hidden="true"></div>
+                            <div class="flower-bloom purple" aria-hidden="true">
+                                <div class="petal"></div>
+                                <div class="petal"></div>
+                                <div class="petal"></div>
+                                <div class="petal"></div>
+                                <div class="petal"></div>
+                            </div>
+                        </label>
+                        <div class="flower-wisdom">
+                            <h3>The Early ShiftLeft Days</h3>
+                            <p>Built React visualizations for code analysis at a startup. Discovered that helping developers see security vulnerabilities is like teaching them to see in a new dimension.</p>
+                        </div>
+                    </div>
 
-          <div class="mt-6 pb-4 flex items-center justify-center gap-x-5">
-            <a class="link" href="https://twitter.com/gangaraju4u"
-              ><svg
-                class="h-6 fill-current text-gray-600 hover:text-blue-700"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title>Twitter</title>
-                <path
-                  d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"
-                />
-              </svg>
-            </a>
-            <a class="link" href="https://vmst.io/@chaitanya" rel="me">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 216.4144 232.00976"
-                class="h-6 fill-current text-gray-600 hover:text-blue-700"
-              >
-                <title>Mastodan</title>
-                <path
-                  class="fill-gray-600 hover:fill-blue-700"
-                  d="M211.80734 139.0875c-3.18125 16.36625-28.4925 34.2775-57.5625 37.74875-15.15875 1.80875-30.08375 3.47125-45.99875 2.74125-26.0275-1.1925-46.565-6.2125-46.565-6.2125 0 2.53375.15625 4.94625.46875 7.2025 3.38375 25.68625 25.47 27.225 46.39125 27.9425 21.11625.7225 39.91875-5.20625 39.91875-5.20625l.8675 19.09s-14.77 7.93125-41.08125 9.39c-14.50875.7975-32.52375-.365-53.50625-5.91875C9.23234 213.82 1.40609 165.31125.20859 116.09125c-.365-14.61375-.14-28.39375-.14-39.91875 0-50.33 32.97625-65.0825 32.97625-65.0825C49.67234 3.45375 78.20359.2425 107.86484 0h.72875c29.66125.2425 58.21125 3.45375 74.8375 11.09 0 0 32.975 14.7525 32.975 65.0825 0 0 .41375 37.13375-4.59875 62.915"
-                />
-                <path
-                  fill="#fff"
-                  d="M177.50984 80.077v60.94125h-24.14375v-59.15c0-12.46875-5.24625-18.7975-15.74-18.7975-11.6025 0-17.4175 7.5075-17.4175 22.3525v32.37625H96.20734V85.42325c0-14.845-5.81625-22.3525-17.41875-22.3525-10.49375 0-15.74 6.32875-15.74 18.7975v59.15H38.90484V80.077c0-12.455 3.17125-22.3525 9.54125-29.675 6.56875-7.3225 15.17125-11.07625 25.85-11.07625 12.355 0 21.71125 4.74875 27.8975 14.2475l6.01375 10.08125 6.015-10.08125c6.185-9.49875 15.54125-14.2475 27.8975-14.2475 10.6775 0 19.28 3.75375 25.85 11.07625 6.36875 7.3225 9.54 17.22 9.54 29.675"
-                />
-              </svg>
-            </a>
-            <a class="link" href="https://github.com/kamthamc"
-              ><svg
-                class="h-6 fill-current text-gray-600 hover:text-blue-700"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title>GitHub</title>
-                <path
-                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-                />
-              </svg>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/chaitanya-kamatham/"
-              class="link"
-            >
-              <svg
-                version="1.1"
-                id="Layer_1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                viewBox="0 0 310 310"
-                xml:space="preserve"
-                class="h-6 fill-current fill-gray-600 hover:text-blue-700"
-              >
-                <title>Linkedin</title>
-                <g id="XMLID_801_">
-                  <path
-                    id="XMLID_802_"
-                    d="M72.16,99.73H9.927c-2.762,0-5,2.239-5,5v199.928c0,2.762,2.238,5,5,5H72.16c2.762,0,5-2.238,5-5V104.73
-		C77.16,101.969,74.922,99.73,72.16,99.73z"
-                  />
-                  <path
-                    id="XMLID_803_"
-                    d="M41.066,0.341C18.422,0.341,0,18.743,0,41.362C0,63.991,18.422,82.4,41.066,82.4
-		c22.626,0,41.033-18.41,41.033-41.038C82.1,18.743,63.692,0.341,41.066,0.341z"
-                  />
-                  <path
-                    id="XMLID_804_"
-                    d="M230.454,94.761c-24.995,0-43.472,10.745-54.679,22.954V104.73c0-2.761-2.238-5-5-5h-59.599
-		c-2.762,0-5,2.239-5,5v199.928c0,2.762,2.238,5,5,5h62.097c2.762,0,5-2.238,5-5v-98.918c0-33.333,9.054-46.319,32.29-46.319
-		c25.306,0,27.317,20.818,27.317,48.034v97.204c0,2.762,2.238,5,5,5H305c2.762,0,5-2.238,5-5V194.995
-		C310,145.43,300.549,94.761,230.454,94.761z"
-                  />
-                </g>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
+                    <!-- Flower 3 -->
+                    <div class="flower-group">
+                        <input type="checkbox" id="flower3" class="flower-checkbox">
+                        <label for="flower3" class="flower" aria-label="Third project failure">
+                            <div class="flower-stem"></div>
+                            <div class="flower-bloom blue">
+                                <div class="petal"></div>
+                                <div class="petal"></div>
+                                <div class="petal"></div>
+                                <div class="petal"></div>
+                                <div class="petal"></div>
+                            </div>
+                        </label>
+                        <div class="flower-wisdom">
+                            <h3>The iOS Adventure at 23 Labs</h3>
+                            <p>Consulted on iOS development for a year, only to watch the mobile landscape shift to cross-platform. Learned that betting on one platform is like planting one type of flower.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      <div class="w-full lg:w-2/5">
-        <img
-          src="https://source.unsplash.com/ch1t9lku6Ok"
-          class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block"
-          alt=""
-        />
-      </div>
+        <!-- Section 3: Launch Bay -->
+        <section class="realm launch-bay" id="launch" aria-labelledby="launch-title">
+            <div class="bay-container">
+                <h2 class="realm-title" id="launch-title">Launch Bay</h2>
+                <p class="realm-description">Projects floating in the digital cosmos</p>
+                
+                <div class="floating-projects">
+                    <!-- Project 1 -->
+                    <div class="project-card card-1">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <h3>Microsoft Entra Portal</h3>
+                            <p>Identity and access management platform</p>
+                            <div class="tech-tags">
+                                <span>React</span>
+                                <span>.NET Core</span>
+                                <span>Azure</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card card-2">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <h3>ShiftLeft Security Platform</h3>
+                            <p>Code analysis and runtime protection</p>
+                            <div class="tech-tags">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>Puppeteer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card card-3">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <h3>Playwright E2E Framework</h3>
+                            <p>Automated testing infrastructure</p>
+                            <div class="tech-tags">
+                                <span>Playwright</span>
+                                <span>TypeScript</span>
+                                <span>CI/CD</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- UFO/Spaceship -->
+                    <div class="ufo">
+                        <div class="ufo-body"></div>
+                        <div class="ufo-dome"></div>
+                        <div class="ufo-light"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Dream Swamp -->
+        <section class="realm dream-swamp" id="swamp" aria-labelledby="swamp-title">
+            <div class="swamp-container">
+                <h2 class="realm-title" id="swamp-title">Dream Swamp</h2>
+                <p class="realm-description">Future ideas bubbling in the subconscious</p>
+                
+                <div class="swamp-surface">
+                    <!-- Glowing orbs with future ideas -->
+                    <div class="idea-orb orb-1">
+                        <div class="orb-glow"></div>
+                        <div class="orb-core"></div>
+                        <div class="idea-tooltip">
+                            <h4>AI-Powered Security</h4>
+                            <p>Next-gen threat detection using machine learning</p>
+                        </div>
+                    </div>
+                    
+                    <div class="idea-orb orb-2">
+                        <div class="orb-glow"></div>
+                        <div class="orb-core"></div>
+                        <div class="idea-tooltip">
+                            <h4>Cross-Platform Frameworks</h4>
+                            <p>Universal development tools for mobile and web</p>
+                        </div>
+                    </div>
+                    
+                    <div class="idea-orb orb-3">
+                        <div class="orb-glow"></div>
+                        <div class="orb-core"></div>
+                        <div class="idea-tooltip">
+                            <h4>Identity Revolution</h4>
+                            <p>Reimagining authentication in a decentralized world</p>
+                        </div>
+                    </div>
+                    
+                    <div class="idea-orb orb-4">
+                        <div class="orb-glow"></div>
+                        <div class="orb-core"></div>
+                        <div class="idea-tooltip">
+                            <h4>Developer Empowerment</h4>
+                            <p>Tools that make complex systems simple</p>
+                        </div>
+                    </div>
+
+                    <!-- Reflection effect -->
+                    <div class="water-reflection"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Contact Constellation -->
+        <section class="realm contact-constellation" id="contact" aria-labelledby="contact-title">
+            <div class="constellation-container">
+                <h2 class="realm-title" id="contact-title">Contact Constellation</h2>
+                <p class="realm-description">Connect across the digital cosmos</p>
+                
+                <div class="contact-stars">
+                    <a href="mailto:jobs@kchaitanya.com" class="contact-star email-star" aria-label="Send email">
+                        <div class="star-glow"></div>
+                        <div class="star-core">
+                            <div class="contact-icon">📧</div>
+                            <h3>Email</h3>
+                            <p>jobs@kchaitanya.com</p>
+                        </div>
+                    </a>
+                    
+                    <a href="https://www.linkedin.com/in/chaitanya-kamatham" target="_blank" rel="noopener noreferrer" class="contact-star linkedin-star" aria-label="Visit LinkedIn profile">
+                        <div class="star-glow"></div>
+                        <div class="star-core">
+                            <div class="contact-icon">💼</div>
+                            <h3>LinkedIn</h3>
+                            <p>chaitanya-kamatham</p>
+                        </div>
+                    </a>
+                    
+                    <a href="https://github.com/kamthamc" target="_blank" rel="noopener noreferrer" class="contact-star github-star" aria-label="Visit GitHub profile">
+                        <div class="star-glow"></div>
+                        <div class="star-core">
+                            <div class="contact-icon">⚡</div>
+                            <h3>GitHub</h3>
+                            <p>kamthamc</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="skills-galaxy">
+                    <h3 class="galaxy-title">Core Technologies</h3>
+                    <div class="skill-planets">
+                        <div class="skill-planet primary">.NET Core</div>
+                        <div class="skill-planet primary">React.js</div>
+                        <div class="skill-planet secondary">TypeScript</div>
+                        <div class="skill-planet secondary">Node.js</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
-  </body>
+</body>
 </html>

@@ -1,0 +1,256 @@
+{
+  "profile": {
+    "name": "Chaitanya Kumar Kamatham",
+    "title": "Senior Software Engineer at Microsoft",
+    "location": "San Jose, California, United States",
+    "summary": "As a skilled frontend engineer, I specialize in crafting responsive web applications using HTML, CSS, JavaScript, and React. Experienced in diverse environments, I bring problem-solving, communication, and teamwork skills to the table. I'm eager to tackle challenges and contribute to the success of any project."
+  },
+  "contact": {
+    "email": "jobs@kchaitanya.com",
+    "linkedin": "www.linkedin.com/in/chaitanya-kamatham",
+    "portfolio": "www.kchaitanya.com",
+    "other": "github.com/kamthamc"
+  },
+  "top_skills": [
+    ".NET Core",
+    "JavaScript",
+    "React.js"
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "proficiency": "Professional Working"
+    },
+    {
+      "language": "Telugu",
+      "proficiency": "Native or Bilingual"
+    },
+    {
+      "language": "Hindi",
+      "proficiency": "Limited Working"
+    }
+  ],
+  "certifications": [
+    "Introduction to Programming in Swift 5",
+    "Swift 3 Essential Training: Beyond the Basics",
+    "Swift 5 iOS Application Developer",
+    "Introduction to iOS App Development with Swift 5",
+    "Tables, Data & Networking in iOS"
+  ],
+  "honors_awards": [
+    "C Programmer",
+    "Tweak XP Event Lead"
+  ],
+  "experience": [
+    {
+      "company": "Microsoft",
+      "total_duration": "4 years",
+      "roles": [
+        {
+          "title": "Senior Software Engineer",
+          "start_date": "2025-02",
+          "end_date": "Present",
+          "duration": "6 months",
+          "location": "Hyderabad, Telangana, India",
+          "description": []
+        },
+        {
+          "title": "Senior Software Engineer",
+          "start_date": "2021-08",
+          "end_date": "2025-02",
+          "duration": "3 years 7 months",
+          "location": "California, United States",
+          "description": [
+            "Worked on a react webapp using reusable components",
+            "Improved Web app performance",
+            "Created E2E test framework using Playwright",
+            "Created Entra portal extension",
+            "Worked on .Net Web APIs"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "CloudKnox Security Inc. (Acquired by Microsoft Corporation)",
+      "title": "Software Engineer",
+      "start_date": "2020-12",
+      "end_date": "2021-08",
+      "duration": "9 months",
+      "location": "United States",
+      "description": [
+        "Worked on a react webapp using reusable components",
+        "Improved Web app performance",
+        "Migrated part of Angular app to React App."
+      ]
+    },
+    {
+      "company": "ShiftLeft Inc",
+      "title": "Sr UI Engineer",
+      "start_date": "2017-07",
+      "end_date": "2020-10",
+      "duration": "3 years 4 months",
+      "location": "Santa Clara, California",
+      "description": [
+        "Helped build React application to visualize code analysis and runtime agent",
+        "Created Jira (Cloud & on Prem) Integration Plugin in NodeJS (using ExpressJS) and Java (using Spring)",
+        "Created Jenkins Integration Plugin in Java",
+        "Created Azure extension",
+        "Created E2E testing framework using Google Puppeteer",
+        "Assisted in developing API testing framework using Python",
+        "Helped build NodeJS agent to protect applications"
+      ]
+    },
+    {
+      "company": "Pearson",
+      "title": "Software Engineer",
+      "start_date": "2017-03",
+      "end_date": "2017-06",
+      "duration": "4 months",
+      "location": "San Francisco Bay Area",
+      "description": [
+        "Responsible for creating responsive react components with internationalisation & accessibility support.",
+        "Responsible for integrating various react components into main application.",
+        "Technologies: ReactJS, NodeJS, Sass"
+      ]
+    },
+    {
+      "company": "Connect.com",
+      "title": "Web Developer",
+      "start_date": "2016-10",
+      "end_date": "2017-02",
+      "duration": "5 months",
+      "location": "San Francisco Bay Area",
+      "description": [
+        "Responsible for the responsive web application of a next-gen social app.",
+        "Technologies: Web sockets, Sass, NodeJS, React, Flexbox"
+      ]
+    },
+    {
+      "company": "Captora",
+      "total_duration": "2 years 1 month",
+      "roles": [
+        {
+          "title": "Member of Technical Staff",
+          "start_date": "2016-02",
+          "end_date": "2016-10",
+          "duration": "9 months",
+          "location": "Mountain View, California",
+          "description": [
+            "Worked on the Platform(Backend) to create rest APIs using Spring framework",
+            "Helped in creating micro services.",
+            "Worked with various services like Amazon Container Service and DynamoDB.",
+            "Helped in improving the core content intelligence project."
+          ]
+        },
+        {
+          "title": "Front End Engineer",
+          "start_date": "2014-10",
+          "end_date": "2016-02",
+          "duration": "1 year 5 months",
+          "location": "Mountain View, California",
+          "description": [
+            "Worked on Front-end using AngularJS and Angular Material Frameworks.",
+            "Responsible for building the internal app individually and also responsible for developing few components in the customer facing app."
+          ]
+        }
+      ]
+    },
+    {
+      "company": "23 Labs",
+      "title": "Consultant iOS Engineer",
+      "start_date": "2013-10",
+      "end_date": "2014-10",
+      "duration": "1 year 1 month",
+      "location": "California",
+      "description": [
+        "Developed several iOS applications. Supporting the organization’s core mobile application development for it’s early 2015 release"
+      ]
+    },
+    {
+      "company": "Rapra Software Technologies Pvt. Ltd",
+      "title": "Consultant Web Developer",
+      "start_date": "2010-04",
+      "end_date": "2014-10",
+      "duration": "4 years 7 months",
+      "location": "Hyderabad Area, India",
+      "description": [
+        "Developed several web and mobile applications working part time. Supported organization’s in-house product development team during product release hiccups. Worked the business analysts to prepare functionality and technical delivery documents"
+      ]
+    },
+    {
+      "company": "Apple",
+      "title": "UI Developer",
+      "start_date": "2014-07",
+      "end_date": "2014-09",
+      "duration": "3 months",
+      "location": "Sunnyvale",
+      "description": [
+        "Worked on internal website development."
+      ]
+    },
+    {
+      "company": "Polis Center - Indiana University",
+      "title": "Web Developer",
+      "start_date": "2013-04",
+      "end_date": "2013-12",
+      "duration": "9 months",
+      "location": "indianapolis, indiana area",
+      "description": [
+        "Worked on revamping the project with the new architecture and frameworks in KnockoutJS, NodeJS, Angular JS.Developed search engine for the website to retrieving and graphically represent historical data using maps, graphs, and tables. Developed custom filters for the above mentioned application.",
+        "Played an instrumental role in reducing the maintenance cost of the application by building reusable components"
+      ]
+    },
+    {
+      "company": "Adolescent Medicine - Indiana University School of Medicine",
+      "title": "Web Developer",
+      "start_date": "2012-02",
+      "end_date": "2013-03",
+      "duration": "1 year 2 months",
+      "location": "Indianapolis, Indiana Area",
+      "description": [
+        "Developed dashboards to analyze clinical data collected during pilots and user studies. Worked in a team that is responsible for complete overhaul of their system architecture"
+      ]
+    },
+    {
+      "company": "IUPUI",
+      "title": "Teaching Assistant",
+      "start_date": "2012-01",
+      "end_date": "2012-12",
+      "duration": "1 year",
+      "location": "Indianapolis, Indiana Area",
+      "description": [
+        "My job is to make the under graduate students understand the problem and try to make them find the solution to the problem without revealing the solution.",
+        "Dealt with various languages in computer science for analyzing and helping the undergraduate students to find a solution.",
+        "Analyzed complex scripts written by the student to identify the issues they are facing and work with them to resolve the issue."
+      ]
+    },
+    {
+      "company": "EA Mobile",
+      "title": "Associate Software Engineer",
+      "start_date": "2010-07",
+      "end_date": "2011-02",
+      "duration": "8 months",
+      "location": null,
+      "description": [
+        "Worked in a team of eight developing various games on Android and Symbian platforms. Analyzed the engines and their workflows for various games. Ported the mobile games to various devices and fixed several bugs"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Indiana University–Purdue University Indianapolis",
+      "degree": "Masters, CIS",
+      "years": "2012 - 2013"
+    },
+    {
+      "institution": "Jawaharlal Nehru Technological University",
+      "degree": "B.Tech, Computer Science",
+      "years": "2006 - 2010"
+    },
+    {
+      "institution": "C V Raman Junior College",
+      "degree": null,
+      "years": "2004 - 2006"
+    }
+  ]
+}
